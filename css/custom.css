@@ -108,10 +108,10 @@
 	}
 	.first-image-part object {
 		position: absolute;
-		width: 850px;
+		width: 750px;
 		float: left;
 		top: 0;
-		margin-right: -50%;
+		margin-right: -20%;
 	}
 	.top-second-part {
 		top: 800px;
@@ -295,7 +295,7 @@
 		.third-part-image {
 			padding-top: 0;
 			position: absolute;
-			top: 1045px;
+			top: 945px;
 			padding-right: 0;
 			width: 650px !important;
 			right: -85px;
@@ -309,7 +309,7 @@
 			width: 418px !important;
 		}
 		.top-forth-part-image{
-			top: 1735px;
+			top: 1685px;
 			padding-right: 0;
 			width: 100px;
 			left: 43px;
@@ -500,7 +500,7 @@
 	.top-fift-part { top: 1370px;}
 	.bg-wight.slider-first {padding-bottom: 0px;}
 	.top-forth-part-image {
-		top: 1400px;
+		top: 1300px;
 	}
 	.forth-part-text {
 		float: left;
