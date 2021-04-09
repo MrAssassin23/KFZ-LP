@@ -80,7 +80,7 @@
 	.image-bg {
 		position: absolute;
 		width: 100%;
-		top: 480px;
+		top: 520px;
 	}
 	.main-width {
 		width: 1200px;
@@ -108,10 +108,10 @@
 	}
 	.first-image-part object {
 		position: absolute;
-		width: 750px;
+		width: 670px;
 		float: left;
 		top: 0;
-		margin-right: -20%;
+		margin-right: -10%;
 	}
 	.top-second-part {
 		top: 800px;
@@ -213,16 +213,17 @@
 
 /* new */
 .first-text-part {
-    width: 50% !important;
+    width: 55% !important;
     position: absolute;
     top: 140px;
+	z-index: 10;
 }
 
     .first-image-part {
-		width: 53%;
+		width: 50%;
 		position: absolute;
 		right: -20px;
-		top: 62px;
+		top: 52px;
 	}
 	
 	.first-text-part h4 {
@@ -257,7 +258,7 @@
 		} */
 		
 		.top-fift-part {
-			top: 2050px;
+			top: 2450px;
 		}
 		.top-fift-image {
 			position: absolute;
@@ -287,29 +288,42 @@
 			margin: 50px auto 0;
 		}
 
-		.third-part-text {
-			top: 1020px;
+		.third-part-text  {
+			top: 1420px;
+			left: 30px;
+			width: 454px !important;
+		}
+		.fifth-part-text  {
+			top: 2400px;
 			left: 30px;
 			width: 454px !important;
 		}
 		.third-part-image {
 			padding-top: 0;
 			position: absolute;
-			top: 945px;
+			top: 1295px;
 			padding-right: 0;
 			width: 650px !important;
 			right: -85px;
+		}
+		.fifth-part-image {
+			padding-top: 0;
+			position: absolute;
+			top: 2380px;
+			padding-right: 0;
+			width: 650px !important;
+			right: -30px;
 		}
 		.forth-part-text {
 			float: left;
 			padding-top: 0;
 			position: absolute;
-			top: 1600px;
-			right: 200px;
+			top: 1900px;
+			right: 100px;
 			width: 418px !important;
 		}
 		.top-forth-part-image{
-			top: 1685px;
+			top: 1900px;
 			padding-right: 0;
 			width: 100px;
 			left: 43px;
@@ -337,7 +351,7 @@
 		width: 650px !important;
 	}
 	.top-forth-part-image {
-		top: 2035px !important;
+		top: 2235px !important;
 	}
 	.protaction-contant-part {
 		padding: 0 10px;
@@ -354,15 +368,15 @@
 		width: 900px;
 		float: left;
 		top: 0;
-		margin-right: -30%;
+		margin-right: -10%;
 	}
 	/* .first-image-part img {
 		width: 900px;
 	} */
 	.f1_container {height: 200px;}
-	.image-bg {top: 480px;}
+	.image-bg {top: 580px;}
 	/* .third-part-text {top: 1130px; right: 180px;} */
-	.top-second-part { top: 860px;}
+	.top-second-part { top: 900px;}
 	/* .third-part-image {top: 1063px; width: 600px !important; left: 90px;} */
 	/* .forth-part-text {top: 1650px;} */
 	/* .top-forth-part-image {top: 1750px; right: 170px;} */
@@ -391,30 +405,44 @@
 	} */
 	
 	.top-fift-part {
-		top: 2495px;
+		top: 3095px;
 	}
 	
 .third-part-image {
     padding-top: 0;
     position: absolute;
-    top: 1265px;
+    top: 1465px;
     padding-right: 0;
     width: 650px !important;
     right: 0;
 }
 .third-part-text {
-    top: 1270px;
+    top: 1520px;
 	left: 140px;
 	width: 454px !important;
+}
+.fifth-part-text{
+	left: 140px;
+	top: 3020px;
+	width: 454px !important;
+}
+.fifth-part-image {
+    padding-top: 0;
+    position: absolute;
+    top: 3065px;
+    padding-right: 0;
+    width: 650px !important;
+    right: 0;
 }
 .forth-part-text {
     float: left;
     padding-top: 0;
     position: absolute;
-    top: 1990px;
+    top: 2290px;
     right: 200px;
     width: 454px !important;
 }
+
 .top-forth-part-image {
     padding-top: 0;
     position: absolute;
@@ -442,7 +470,7 @@
 		width: 1200px;
 	}
 	.image-bg {
-		top: 450px;
+		top: 540px;
 	}
 	.first-image-part {
 		width: 53%;
@@ -452,29 +480,44 @@
 	}
 	.main-width {width: 960px;height: 2500px;}
 	.first-image-part object {
-		width: 700px;
-		margin-right: -45%;
+		width: 600px;
+		margin-right: -15%;
 	}
 	.first-text-part h1 {font-size: 32px;}	
 	.first-text-part h4 {font-size: 28px;margin: 17px 0 22px;}
 	.first-text-part.second-possition {top: 274px;}
 	.first-text-part .sm-center {margin-top: 0;}
 	.top-second-part {
-		top: 730px;
+		top: 710px;
+	}
+	
+	div.sec1-features-container{
+		padding-top: 35px;
 	}
 	.third-part-text {
-		top: 900px;
+		top: 1200px;
+		left: -20px;
+		width: 418px !important;
+	}
+	.fifth-part-text{
+		top: 2050px;
 		left: -20px;
 		width: 418px !important;
 	}
 	.third-part-image {
-		top: 880px;
+		top: 1160px;
 		right: -190px;
 	}
 	.third-part-image object {
 		width: 500px;
 	}
-	
+	.fifth-part-image {
+		top: 2060px;
+		right: -190px;
+	}
+	.fifth-part-image object {
+		width: 500px;
+	}
 	
 	.top-second-part p {font-size: 16px; line-height: 1.2;}
 	/* .third-part-text {top: 700px;    right: 32px;} */
@@ -482,6 +525,11 @@
 	.third-part-text h4 {font-size: 18px;}
 	.third-part-text p {font-size: 16px;}
 	.third-part-text .border-btn {
+		margin-top: 5px;
+	}
+	.fifth-part-text h4 {font-size: 18px;}
+	.fifth-part-text p {font-size: 16px;}
+	.fifth-part-text .border-btn {
 		margin-top: 5px;
 	}
 	/* .forth-part-text {top: 1030px;left: 0;} */
@@ -500,19 +548,30 @@
 	.top-fift-part { top: 1370px;}
 	.bg-wight.slider-first {padding-bottom: 0px;}
 	.top-forth-part-image {
-		top: 1300px;
+		top: 1580px;
 	}
 	.forth-part-text {
 		float: left;
 		padding-top: 0;
 		position: absolute;
-		top: 1320px;
+		top: 1600px;
 		right: 80px;
 		width: 330px !important;
 	}
 	.top-fift-part {
-		top: 1680px;
+		top: 2080px;
 	}
+	div.sec1-features-container .feature h4 {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.57;
+		margin: 14px 0;
+	  }
+	  
+	  div.sec1-features-container .feature p {
+		font-size: 16px;
+		line-height: 20px;
+	  }
 }
 @media only screen and (max-width: 1024px){
 	.switching-part {
@@ -636,7 +695,14 @@
 		float: left;
 		text-align: left;
 		margin: 0 auto;
-
+	}
+	.fifth-part-text {
+		position: inherit;
+		max-width: 85%;
+		width: 100% !important;
+		float: left;
+		text-align: left;
+		margin: 0 auto;
 	}
 	.third-part-image {
 		padding-top: 0;
@@ -644,6 +710,15 @@
 		max-width: 85%;
 		margin: 0 auto;
 		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.fifth-part-image {
+		padding-top: 0;
+		position: inherit;
+		max-width: 85%;
+		margin: 0 auto;
+		/* display: flex; */
 		align-items: center;
 		justify-content: center;
 	}
@@ -698,7 +773,7 @@
 	.protaction-contant-part ul {
     height: auto;
 	}
-	.btn-3a.bg-orang-btn {padding: 12px 50px 10px 5px;}
+	.btn-3a.bg-orang-btn , .btn-3a.bg-orang-btn {padding: 9px 50px 10px 5px;}
 	
 	.img-last-part img {
 		margin-top: 10px;
@@ -759,10 +834,13 @@
 	.bg-wight .btn-3a.bg-orang-btn {max-width: 270px;}
 	.btn-3a.bg-orang-btn {
 		width: 270px;
-		height: 55px;
+		height: 48px;
 		font-family: HDI-GerlingSans;
 		font-size: 20px;
 		font-weight: bold;
+	}
+	.border-btn-orange {
+		margin: 0px 0 0px 16px;
 	}
 	.btn-3:after {
 		width: 53px;
@@ -803,6 +881,12 @@
 	.top-third-part .d-flex {
 		flex-direction: column;
 	}
+	.top-fifth-part {
+		float: left;    margin-top: 45px;
+	}
+	.top-fifth-part .d-flex {
+		flex-direction: column;
+	}
 	/* .third-part-image {
 		padding: 0;
 		max-width: 85%;
@@ -823,6 +907,9 @@
 		font-size: 17px;
 		line-height: 1.35;
 		margin-bottom: 21px;
+	}
+	.third-part-text p.spacer , .fifth-part-text p.spacer , .forth-part-text p.spacer{ 
+		padding-bottom: 0px;
 	}
 	.sm-center {
 		width: 100%;
@@ -1202,12 +1289,17 @@
 		text-align: center;
 	}
 	.btn-3a.bg-orang-btn {
-		width: 280px;
-		height: 55px;
+		width: 264px;
+		height: 48px;
 		font-family: HDI-GerlingSans;
-		font-size: 20px;
-		padding: 10px 50px 10px 5px;
+		font-size: 15px;
+		padding: 12px 50px 10px 5px;
 		font-weight: bold;
+	}
+	.border-btn-orange {
+		margin: 0 0 0 16px;
+		font-size: 15px;
+		padding: 12px 0px 10px 0px;
 	}
 	.btn-3:after {
 		width: 53px;
@@ -1223,6 +1315,9 @@
 		width: 100%;
 	}
 	.third-part-text {
+		max-width: 346px !important;
+	}
+	.fifth-part-text {
 		max-width: 346px !important;
 	}
 	.top-second-part h3{font-size: 24px;
@@ -1295,7 +1390,15 @@
 		.top-third-part .d-flex {
 			flex-direction: column-reverse;
 		}
+		.top-fifth-part .d-flex {
+			flex-direction: column-reverse;
+		}
 		.third-part-image {
+			max-width: 346px !important;
+			overflow: hidden;
+			margin-bottom: 46px;
+		}
+		.fifth-part-image {
 			max-width: 346px !important;
 			overflow: hidden;
 			margin-bottom: 46px;
@@ -1441,6 +1544,7 @@
 		.forth-part-text h4 {
 			font-size: 17px;line-height: 1.35;}
 			.top-third-part {float: left;}
+			.top-fifth-part {float: left;}
 			/* .third-part-text {
 				padding-left: 0;
 				max-width: 346px;
@@ -1452,7 +1556,7 @@
 				width: 230px;
 			}
 			.top-forth-part {
-				padding-top: 142px;
+				padding-top: 42px;
 				/* float: left; */
 				max-width: 346px;
 				overflow-x: hidden;
