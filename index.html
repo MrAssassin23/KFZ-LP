@@ -136,9 +136,9 @@
               <p> Mit der HDI Motorradversicherung steuern Sie Ihre Maschine unbeschwert über die schönsten Straßen
                 Deutschlands. Weil Sie wissen, dass Sie für alle Fälle gewappnet sind. </p>
             </div>
-            <div class="sec1-features-container">
+            <div class="sec1-features-container owl-carousel owl-theme" id="owl-carousel-features">
               <div class="feature" id="feature1">
-                <img src="images/images/Auslandschaden-Schutz.svg" alt="">
+                <img src="images/images/Icon_Unfall_sorgenfrei.svg" alt="">
                 <h4> Für den Fall des Unfalls sorgenfrei</h4>
                 <p>
                   Es kracht – alle 12 Sekunden auf Deutschlands Straßen. Schützen Sie Sich davor und vor vielem mehr.
@@ -147,7 +147,7 @@
                 </p>
               </div>
               <div class="feature" id="feature2">
-                <img src="images/images/Elektro-Schutz.svg" alt="">
+                <img src="images/images/Icon_Werkstattservice.svg" alt="">
                 <h4> Für den Fall des Unfalls sorgenfrei</h4>
                 <p>
                   Es kracht – alle 12 Sekunden auf Deutschlands Straßen. Schützen Sie Sich davor und vor vielem mehr.
@@ -156,7 +156,7 @@
                 </p>
               </div>
               <div class="feature" id="feature3">
-                <img src="images/images/Gap-Schutz.svg" alt="">
+                <img src="images/images/Icon_Flexibilität.svg" alt="">
                 <h4> Für den Fall des Unfalls sorgenfrei</h4>
                 <p>
                   Es kracht – alle 12 Sekunden auf Deutschlands Straßen. Schützen Sie Sich davor und vor vielem mehr.
@@ -177,7 +177,7 @@
                   Meist beträgt ihr Bremsweg dabei kaum mehr als 50 Meter. Doch auch das ist manchmal nicht genug! Heute
                   kreuzt ein Reh Lenas Weg, Ausweichen unmöglich. Zum Glück bleibt sie unversehrt.
                 </p>
-                <p class="spacer">
+                <p>
                   <span class="taxt-bold"> Doppeltes Glück:</span> Um Bergung und Reparatur ihres Motorrads
                   und alle Formalia der Wildkollision kümmert sich die Motorradversicherung der HDI.
                 </p>
@@ -231,7 +231,7 @@
                   weiteres Fahrzeug unerwartet von der Seite auftaucht. Der Pkw vor Luca legt eine Vollbremsung ein –
                   <br>krach, Auffahrunfall!
                 </p>
-                <p class="spacer">
+                <p>
                   Zu seinem Glück ist Luca bei der HDI versichert.
                   <span class="taxt-bold"> Alle entstandenen Kosten werden ihm ersetzt </span> und schon bald kann er –
                   diesmal etwas geduldiger – neue Wege erkunden.
@@ -1539,6 +1539,23 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $('#owl-carousel-features').owlCarousel({
+      loop:true,
+      dots : true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1025: {
+          items: 3
+        },
+      }
+    })
+  </script>
   <script>
 
     $('#owl-carousel1').owlCarousel({

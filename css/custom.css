@@ -80,13 +80,14 @@
 	.image-bg {
 		position: absolute;
 		width: 100%;
-		top: 520px;
+		top: 580px;
+		left: 30px;
 	}
 	.main-width {
 		width: 1200px;
 		margin: 0 auto;
 		position: relative;     
-		height: 3026px;
+		height: 3081px;
 	}
 	.top-first-part {
 		padding-top: 0;
@@ -108,7 +109,7 @@
 	}
 	.first-image-part object {
 		position: absolute;
-		width: 670px;
+		width: 620px;
 		float: left;
 		top: 0;
 		margin-right: -10%;
@@ -223,7 +224,7 @@
 		width: 50%;
 		position: absolute;
 		right: -20px;
-		top: 52px;
+		top: 120px;
 	}
 	
 	.first-text-part h4 {
@@ -294,7 +295,7 @@
 			width: 454px !important;
 		}
 		.fifth-part-text  {
-			top: 2400px;
+			top: 2500px;
 			left: 30px;
 			width: 454px !important;
 		}
@@ -304,12 +305,12 @@
 			top: 1295px;
 			padding-right: 0;
 			width: 650px !important;
-			right: -85px;
+			right: -15px;
 		}
 		.fifth-part-image {
 			padding-top: 0;
 			position: absolute;
-			top: 2380px;
+			top: 2550px;
 			padding-right: 0;
 			width: 650px !important;
 			right: -30px;
@@ -318,12 +319,12 @@
 			float: left;
 			padding-top: 0;
 			position: absolute;
-			top: 1900px;
+			top: 1940px;
 			right: 100px;
 			width: 418px !important;
 		}
 		.top-forth-part-image{
-			top: 1900px;
+			top: 1950px;
 			padding-right: 0;
 			width: 100px;
 			left: 43px;
@@ -351,7 +352,7 @@
 		width: 650px !important;
 	}
 	.top-forth-part-image {
-		top: 2235px !important;
+		top: 2280px !important;
 	}
 	.protaction-contant-part {
 		padding: 0 10px;
@@ -362,13 +363,14 @@
 		position: absolute;
 		width: 100%;
 		top: -58px;
+		left: 35px;
 	}
 	.first-image-part object {
 		position: absolute;
-		width: 900px;
+		width: 750px;
 		float: left;
 		top: 0;
-		margin-right: -10%;
+		margin-right: -5%;
 	}
 	/* .first-image-part img {
 		width: 900px;
@@ -411,7 +413,7 @@
 .third-part-image {
     padding-top: 0;
     position: absolute;
-    top: 1465px;
+    top: 1585px;
     padding-right: 0;
     width: 650px !important;
     right: 0;
@@ -429,7 +431,7 @@
 .fifth-part-image {
     padding-top: 0;
     position: absolute;
-    top: 3065px;
+    top: 3155px;
     padding-right: 0;
     width: 650px !important;
     right: 0;
@@ -452,7 +454,7 @@
     left: 85px;
 }
 .first-image-part {
-    top: 38px;
+    top: 30px;
 }
 
 }
@@ -471,17 +473,18 @@
 	}
 	.image-bg {
 		top: 540px;
+		left: 20px;
 	}
 	.first-image-part {
 		width: 53%;
 		position: absolute;
 		right: -20px;
-		top: 108px;
+		top: 145px;
 	}
-	.main-width {width: 960px;height: 2500px;}
+	.main-width {width: 960px;height: 2580px;}
 	.first-image-part object {
-		width: 600px;
-		margin-right: -15%;
+		width: 530px;
+		margin-right: -10%;
 	}
 	.first-text-part h1 {font-size: 32px;}	
 	.first-text-part h4 {font-size: 28px;margin: 17px 0 22px;}
@@ -500,19 +503,19 @@
 		width: 418px !important;
 	}
 	.fifth-part-text{
-		top: 2050px;
+		top: 2070px;
 		left: -20px;
 		width: 418px !important;
 	}
 	.third-part-image {
-		top: 1160px;
-		right: -190px;
+		top: 1110px;
+		right: -165px;
 	}
 	.third-part-image object {
 		width: 500px;
 	}
 	.fifth-part-image {
-		top: 2060px;
+		top: 2130px;
 		right: -190px;
 	}
 	.fifth-part-image object {
@@ -548,13 +551,13 @@
 	.top-fift-part { top: 1370px;}
 	.bg-wight.slider-first {padding-bottom: 0px;}
 	.top-forth-part-image {
-		top: 1580px;
+		top: 1560px;
 	}
 	.forth-part-text {
 		float: left;
 		padding-top: 0;
 		position: absolute;
-		top: 1600px;
+		top: 1585px;
 		right: 80px;
 		width: 330px !important;
 	}
@@ -574,6 +577,10 @@
 	  }
 }
 @media only screen and (max-width: 1024px){
+	div.sec1-features-container .feature {
+		width: 564px;
+		margin: 0 auto;
+	}
 	.switching-part {
 		padding-bottom: 50px;
 	}
@@ -805,6 +812,10 @@
 	}
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
+	div.sec1-features-container .feature {
+		width: 524px;
+		margin: 0 auto;
+	}
 	.slider-rate-part h4 {
 		font-size: 17px;
 	}
@@ -1079,6 +1090,21 @@
 		}
 	}
 @media only screen and (max-width: 767px) {
+	div.sec1-features-container .feature {
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.sec1-features-container .feature img {
+		width: 87px;
+		height: 102px;
+	    }
+	div.sec1-features-container .feature h4 {
+	font-size: 19px;
+	}
+	
+	div.sec1-features-container .feature p {
+	font-size: 17px;
+	}
 	.selection-image-bottom p {
 		font-size: 19px;
 		font-weight: 300;
@@ -1273,7 +1299,7 @@
 	}
 	.first-image-part object {
 		position: inherit;
-		width: 500px;
+		width: 400px;
 	}
 	.first-text-part ul {
 		margin: 44px 0 0;
