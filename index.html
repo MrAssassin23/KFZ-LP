@@ -167,7 +167,7 @@
             </div>
           </div>
 
-           <div class="top-third-part w-100">
+          <div class="top-third-part w-100">
             <div class="d-flex">
               <div class="third-part-text w-100">
                 <p>2 von 8</p>
@@ -193,7 +193,7 @@
             </div>
           </div>
 
-         <div class="top-forth-part w-100">
+          <div class="top-forth-part w-100">
             <div class="d-flex">
               <div id="svg-animation3" class="top-forth-part-image w-50">
 
@@ -220,7 +220,7 @@
               </div>
             </div>
           </div>
-            <div class="top-fifth-part w-100">
+          <div class="top-fifth-part w-100">
             <div class="d-flex">
               <div class="fifth-part-text w-100">
                 <h4>Mal wieder ausgebremst</h4>
@@ -246,7 +246,7 @@
                   data="images/animation/Auffahrunfall.svg"></object>
               </div>
             </div>
-          </div> 
+          </div>
 
           <!-- <div class="top-fift-part w-100">
             <div class="fift-text-part">
@@ -1387,6 +1387,85 @@
       </div>
     </section>
     <section class="faq-section">
+      <div class="tips-controls">
+        <a id="tips-next"><i class="fa fa-angle-left" id="left" aria-hidden="true"></i></a>
+        <a id="tips-prev"> <i class="fa fa-angle-right" id="right" aria-hidden="true"></i></a>
+      </div>
+      <div class="container" id="tips-container">
+        <p>8 von 8</p>
+        <h4>TIPPS & HÄUFIG GESTELLTE FRAGEN</h4>
+        <p class="title">Tipps für die richtige Fahrtechnik</p>
+        <div class="tips-carousel owl-carousel owl-theme" id="tips">
+          <div class="tip" id="tip1">
+            <ul>
+              <li>
+                <span class="taxt-bold">Defensiv fahren – </span> Fahren Sie defensiv und bremsbereit. Wegen ihrer
+                schmalen Silhouette können andere
+                Verkehrsteilnehmer wie Pkw- oder Lkw-Fahrer Sie beim Linksabbiegen schnell übersehen und einen Unfall
+                verursachen.
+              </li>
+              <li>
+                <span class="taxt-bold">Kurven – </span>Reduzieren Sie die Geschwindigkeit vor der Kurve. Dann sind die
+                Fliehkräfte, denen Sie durch
+                Schräglage entgegenwirken müssen, niedriger.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tip" id="tip2">
+            <ul>
+              <li>
+                <span class="taxt-bold">Bremsverhalten –</span> Synchronisieren Sie Vorder- und Hinterradbremsen.
+                Anfänger neigen dazu, hinten zu stark
+                und vorne zu schwach zu bremsen.
+              </li>
+              <li>
+                <span class="taxt-bold">Touren – </span>Am Anfang nicht übertreiben: Unternehmen Sie zunächst Touren von
+                zwei bis drei Stunden Dauer
+                und legen Sie Pausen ein. Steigern Sie sich allmählich.
+              </li>
+              <li>
+                <span class="taxt-bold">Überholen –</span> Verzichten Sie auf riskante Überholmanöver.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tip" id="tip3">
+            <ul>
+              <li>
+                <span class="taxt-bold"> Sitzhöhe – </span>Die Sitzhöhe ist optimal, wenn bei
+                durchgedrückten Beinen beide Fußsohlen den Boden berühren.
+              </li>
+              <li>
+                <span class="taxt-bold">Sitzposition – </span>Eine aufrechte Sitzposition sorgt für gute
+                Übersicht und entspannte Körperhaltung.
+              </li>
+              <li>
+                <span class="taxt-bold">Motorrad Schwerpunkt –</span> EBikes mit niedrigem Schwerpunkt verzeihen
+                Fahrfehler. Selbst in riskanten
+                Situationen behalten Sie die Kontrolle.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tip" id="tip4">
+            <ul>
+              <li>
+                <span class="taxt-bold"> Gewicht –</span> Motorräder mit niedrigem Gewicht lassen sich
+                souverän handhaben.
+              </li>
+              <li>
+                <span class="taxt-bold">ABS – </span>Bei neu zugelassenen Motorrädern über 125 ccm ist ein
+                Antiblockiersystem (ABS) seit 2017 Pflicht.
+              </li>
+              <li>
+                <span class="taxt-bold">Lenker – </span>Ein handlicher Lenker unterstützt schnelle Ausweichmanöver
+                und eine sichere Kurvenlage.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="faq-part">
           <h3>FAQs</h3>
@@ -1541,8 +1620,8 @@
   <script src="js/owl.carousel.min.js"></script>
   <script>
     $('#owl-carousel-features').owlCarousel({
-      loop:true,
-      dots : true,
+      loop: true,
+      dots: true,
       responsive: {
         0: {
           items: 1
@@ -1554,6 +1633,33 @@
           items: 3
         },
       }
+    })
+
+    let tipsCarousel = $('#tips')
+
+    tipsCarousel.owlCarousel({
+      loop: true,
+      dots: true,
+      slideBy:2,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1025: {
+          items: 2
+        },
+      }
+    })
+
+    $("#tips-next").click( () => {
+      console.log('clicked')
+      tipsCarousel.trigger('next.owl.carousel');
+    })
+    $("#tips-prev").click(function () {
+      tipsCarousel.trigger('prev.owl.carousel');
     })
   </script>
   <script>

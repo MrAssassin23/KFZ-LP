@@ -931,6 +931,7 @@ section.faq-section {
   width: 100%;
   float: left;
   padding: 92px 0 119px;
+  position: relative;
 }
 
 .faq-part h3 {
@@ -2203,3 +2204,120 @@ div.sec1-features-container .feature p {
   line-height: 25px;
   text-align: center;
 }
+
+div#tips-container{
+  margin-top: 24px;
+  margin-bottom: 106px;
+}
+
+div#tips-container p{
+  font-stretch: condensed;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.94;
+  color: #000000;
+}
+
+div#tips-container h4{
+  font-family: HDI-GerlingSans;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #009c33;
+}
+
+div#tips-container p.title{
+  margin-top: 71px;
+  margin-bottom: 32px;
+  font-family: HDI-GerlingSans;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #009c33;
+}
+
+div.tips-carousel {
+  display: flex ;
+  width: 100%;
+  align-items: stretch;
+  padding: 15px 0;
+}
+
+div.tips-carousel .owl-stage-outer {
+  padding: 15px 0;
+}
+
+div.tips-carousel .tip{
+  background-color: white;
+  padding: 34px 24px 8px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px #229c3293;
+  margin: 5px 16px;
+  flex: 0.5;
+  align-self: stretch;
+  height: 315px;
+}
+div.tips-carousel .tip ul {
+  list-style-type: none;
+  padding-right: 10px;
+  margin: 0;
+}
+div.tips-carousel .tip ul li {
+  font-size: 19px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0a0a0a;
+  position: relative;
+  padding-bottom: 24px;
+}
+div.tips-carousel .tip ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  background-image: url(../images/Checkmark_green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 19.6px;
+  top: 5px;
+}
+div.tips-controls {
+  width: 100%;
+}
+div.tips-controls #left, div.tips-controls #right {
+  font-size: 40px;
+  color: #009c33;
+}
+
+
+/* element.style {
+  position: absolute;
+  top: 510px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+min-width : 1600px
+min-width : 1200px
+min-width : 992px
+min-width : 768px
+min-width : 576px */
