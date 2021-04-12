@@ -556,7 +556,25 @@ li.img-last-part {
   color: #009c33;
   font-family: HDI-GerlingSans;
 }
+.i-icon::before {
+  content: url("../images/Information_i.svg");
+  width: 3px;
+  position: absolute;
+  left: 21px;
+}
+.pl-40 {
+  padding-left: 50px !important;
+}
 
+.i-icon::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 10px;
+  border-radius: 50%;
+  border: 1px solid #009c32;
+}
 .protaction-part-title p {
   font-family: HDI-GerlingSans-light;
   font-size: 20px;
