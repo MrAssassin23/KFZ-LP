@@ -2396,7 +2396,7 @@ div.tips-carousel .tip {
   padding: 34px 24px 8px;
   border-radius: 5px;
   box-shadow: 1px 1px 15px #229c3293;
-  margin: 5px 16px;
+  margin: 15px;
   flex: 0.5;
   align-self: stretch;
   height: 315px;
@@ -2438,18 +2438,241 @@ div.tips-controls #right {
   font-size: 40px;
   color: #009c33;
 }
-
-/* element.style {
+div.tips-controls {
   position: absolute;
-  top: 510px;
-  padding: 0 60px;
+  top: 495px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
-min-width : 1600px
-min-width : 1200px
-min-width : 992px
-min-width : 768px
-min-width : 576px */
+div.tips-controls {
+  top: 710px;
+  padding: 0 10px;
+  z-index: 10;
+}
+div.tips-carousel .tip {
+  width: 270px;
+  height: 490px;
+  margin: 15px auto;
+  padding: 28px 12px 4px;
+}
+#tip1,
+#tip3 {
+  margin-right: auto;
+}
+#tip2,
+#tip4 {
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 576px) {
+  div.tips-controls {
+    top: 700px;
+    padding: 0 10px;
+  }
+  div.tips-carousel .tip {
+    width: 320px;
+    height: 435px;
+    margin: 15px auto;
+    padding: 28px 12px 4px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: auto;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 690px) {
+  div.tips-controls {
+    padding: 0 15px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  div.tips-controls {
+    top: 500px;
+    padding: 0 60px;
+  }
+  div.tips-carousel .tip {
+    width: auto;
+    padding: 34px 24px 8px;
+    height: 310px;
+    margin: 15px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: 15px;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: 15px;
+  }
+
+  div#tips-container {
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+
+  div#tips-container p {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  div#tips-container h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  div#tips-container p.title {
+    font-size: 17px;
+    line-height: 1.35;
+    margin-top: 61px;
+    margin-bottom: 12px;
+  }
+
+  div.tips-carousel .tip ul li {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.32;
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 860px) {
+  div.tips-controls {
+    padding: 0 15px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  div#tips-container {
+    margin-top: 24px;
+    margin-bottom: 106px;
+  }
+
+  div#tips-container p {
+    font-size: 17px;
+    line-height: 1.94;
+  }
+
+  div#tips-container h4 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  div#tips-container p.title {
+    margin-top: 71px;
+    margin-bottom: 32px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.57;
+  }
+
+  div.tips-carousel .tip ul li {
+    padding-bottom: 24px;
+  }
+
+  div#tips-container p.sub-title {
+    display: none;
+  }
+  div.tips-controls {
+    top: 490px;
+    padding: 0 60px;
+  }
+  div.tips-carousel .tip {
+    height: 260px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: 15px;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+  div.tips-controls {
+    padding: 0 15px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  div.tips-controls {
+    top: 545px;
+    padding: 0 60px;
+  }
+  div.tips-carousel .tip {
+    height: 360px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: 15px;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  div.tips-controls {
+    padding: 0 30px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  div.tips-controls {
+    top: 530px;
+    padding: 0 60px;
+  }
+  div.tips-carousel .tip {
+    height: 315px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: 25px;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1650px) {
+  div.tips-controls {
+    padding: 0 30px !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  div.tips-controls {
+    position: absolute;
+    top: 495px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  div.tips-carousel .tip {
+    background-color: white;
+    padding: 34px 24px 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #229c3293;
+    height: 260px;
+  }
+  #tip1,
+  #tip3 {
+    margin-right: 25px;
+  }
+  #tip2,
+  #tip4 {
+    margin-left: 25px;
+  }
+}

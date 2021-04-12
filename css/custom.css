@@ -330,6 +330,7 @@
   /* new */
 }
 @media only screen and (min-width: 1600px) {
+  
   .top-forth-part-image object {
     width: 650px !important;
   }
@@ -1063,6 +1064,7 @@
     padding: 24px 20px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .protaction-table-section {
     width: 100%;
