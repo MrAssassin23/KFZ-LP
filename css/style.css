@@ -2545,6 +2545,14 @@ div.tips-carousel .tip {
   }
 }
 
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 290px;
+  z-index: 99999;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 860px) {
   div.tips-controls {
     padding: 0 15px !important;
@@ -2623,6 +2631,12 @@ div.tips-carousel .tip {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .sticky {
+    width: 290px;
+  }
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
   div.tips-controls {
     padding: 0 30px !important;
@@ -2638,17 +2652,23 @@ div.tips-carousel .tip {
   }
   #tip1,
   #tip3 {
-    margin-right: 25px;
+    margin-right: 12px;
   }
   #tip2,
   #tip4 {
-    margin-left: 25px;
+    margin-left: 12px;
   }
+  .sticky {
+    width: 350px;
+}
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 1650px) {
+@media only screen and (min-width: 1600px) and (max-width: 1680px) {
   div.tips-controls {
     padding: 0 30px !important;
+  }
+  div#tips-container {
+    padding: 0 45px;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -2669,10 +2689,13 @@ div.tips-carousel .tip {
   }
   #tip1,
   #tip3 {
-    margin-right: 25px;
+    margin-right: 16px;
   }
   #tip2,
   #tip4 {
-    margin-left: 25px;
+    margin-left: 16px;
+  }
+  .sticky {
+    width: 470px;
   }
 }
