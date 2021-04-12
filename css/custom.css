@@ -1162,6 +1162,12 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .bg-green .accordion-toggle.collapsed::after {
+    line-height: 1.6;
+  }
+  /* .bg-green .accordion-toggle::after {
+    line-height: 1.7;
+  } */
   div.sec1-features-container .feature {
     width: 90%;
     margin: 0 auto;
