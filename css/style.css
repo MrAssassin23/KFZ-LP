@@ -27,7 +27,89 @@ main {
 /* *{
     overflow-x: hidden;
 } */
+.mt-82 {
+  margin-top: 82px;
+}
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-23 {
+  font-size: 23px !important;
+  letter-spacing: 1.15px;
+  line-height: 0.96;
+}
+.f-19 {
+  font-size: 19px;
+  letter-spacing: normal;
+  line-height: 1.74;
+}
+.mt-46 {
+  margin-top: 46px !important;
+}
+.von5-8 {
+  font-family: HDI-GerlingSans-light;
+  font-size: 17px !important;
+}
+.von5-8-heading {
+  font-size: 33px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+.color-green {
+  color: #009c33 !important;
+}
+.table-heading-title::before {
+  content: "Unsere Produktlinien";
+  position: absolute;
+  top: 0;
+  left: -99%;
+  background-color: #b3e1c2;
+  width: 98.5%;
+  text-align: left;
+  padding: 20px 0 19px 19px;
+  z-index: 0;
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+.mt-56 {
+  margin-top: 56px;
+}
+.flex {
+  display: flex !important;
+}
+.center-a {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mt-110 {
+  margin-top: 110px;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
 span.navbar-toggler-icon:focus,
 button:focus {
   outline: none;
@@ -163,7 +245,8 @@ ul.hegiht-protection li:last-child {
     transform: translate(-60%,-50%); */
   padding-top: 50px;
 }
-.third-part-text h4  , .fifth-part-text h4{
+.third-part-text h4,
+.fifth-part-text h4 {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.1;
@@ -224,7 +307,8 @@ b {
 	margin: 0 auto;
 	margin: 30px auto 0;
 } */
-.third-part-text p , .fifth-part-text p {
+.third-part-text p,
+.fifth-part-text p {
   font-size: 19px;
   font-weight: 300;
   font-stretch: condensed;
@@ -234,10 +318,12 @@ b {
   color: #000000;
   margin-bottom: 6px;
 }
-.third-part-text p.spacer , .fifth-part-text p.spacer{
+.third-part-text p.spacer,
+.fifth-part-text p.spacer {
   padding-bottom: 24px;
 }
-.third-part-text p b , .fifth-part-text p b{
+.third-part-text p b,
+.fifth-part-text p b {
   font-weight: bold;
   font-family: HDI-GerlingSans;
 }
@@ -250,14 +336,15 @@ b {
   right: 0;
 }
 .fifth-part-image {
-    padding-top: 0;
-    position: absolute;
-    top: 1265px;
-    padding-right: 0;
-    width: 650px !important;
-    right: 0;
-  }
-.third-part-text , .fifth-part-text{
+  padding-top: 0;
+  position: absolute;
+  top: 1265px;
+  padding-right: 0;
+  width: 650px !important;
+  right: 0;
+}
+.third-part-text,
+.fifth-part-text {
   float: left;
   padding-top: 0;
   position: absolute;
@@ -371,9 +458,9 @@ b {
   padding-bottom: 38px;
 }
 
-.switching-part p.top{
-    padding-bottom: 8px;
-    line-height: 1.4;
+.switching-part p.top {
+  padding-bottom: 8px;
+  line-height: 1.4;
 }
 
 .switching-part-section ul {
@@ -948,7 +1035,7 @@ section.faq-section {
   background: #fff;
   width: 100%;
   float: left;
-  text-align: center;
+  text-align: left;
   padding: 0;
   font-size: 19px;
   font-weight: 300;
@@ -2165,9 +2252,9 @@ span.main-title {
   width: 35px;
 }
 
-.top-second-part-wrapper{
-    max-width: 554px;
-    margin: 0 auto;
+.top-second-part-wrapper {
+  max-width: 554px;
+  margin: 0 auto;
 }
 
 div.sec1-features-container {
@@ -2205,12 +2292,12 @@ div.sec1-features-container .feature p {
   text-align: center;
 }
 
-div#tips-container{
+div#tips-container {
   margin-top: 24px;
   margin-bottom: 106px;
 }
 
-div#tips-container p{
+div#tips-container p {
   font-stretch: condensed;
   font-style: normal;
   letter-spacing: normal;
@@ -2221,7 +2308,7 @@ div#tips-container p{
   color: #000000;
 }
 
-div#tips-container h4{
+div#tips-container h4 {
   font-family: HDI-GerlingSans;
   font-size: 30px;
   font-weight: bold;
@@ -2234,7 +2321,7 @@ div#tips-container h4{
   color: #009c33;
 }
 
-div#tips-container p.title{
+div#tips-container p.title {
   margin-top: 71px;
   margin-bottom: 32px;
   font-family: HDI-GerlingSans;
@@ -2249,7 +2336,7 @@ div#tips-container p.title{
 }
 
 div.tips-carousel {
-  display: flex ;
+  display: flex;
   width: 100%;
   align-items: stretch;
   padding: 15px 0;
@@ -2259,7 +2346,7 @@ div.tips-carousel .owl-stage-outer {
   padding: 15px 0;
 }
 
-div.tips-carousel .tip{
+div.tips-carousel .tip {
   background-color: white;
   padding: 34px 24px 8px;
   border-radius: 5px;
@@ -2301,11 +2388,11 @@ div.tips-carousel .tip ul li:before {
 div.tips-controls {
   width: 100%;
 }
-div.tips-controls #left, div.tips-controls #right {
+div.tips-controls #left,
+div.tips-controls #right {
   font-size: 40px;
   color: #009c33;
 }
-
 
 /* element.style {
   position: absolute;
