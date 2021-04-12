@@ -1400,11 +1400,14 @@ a:hover {
   -webkit-transition: all 1s linear;
   -webkit-transform-style: preserve-3d;
 }
-
-.f1_container:hover .f1_card {
+.slider-rate-part:hover .f1_card {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
+/* .f1_container:hover .f1_card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+} */
 
 .face {
   position: absolute;
