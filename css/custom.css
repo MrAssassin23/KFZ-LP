@@ -1911,7 +1911,7 @@
     display: none !important;
   }
   .none-lg {
-    display: block !important;
+    display: block;
   }
   .top-navbar .navbar-toggler.collapsed > .close,
   .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
