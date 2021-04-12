@@ -110,6 +110,7 @@ main {
 .mb-10 {
   margin-bottom: 10px !important;
 }
+
 span.navbar-toggler-icon:focus,
 button:focus {
   outline: none;
@@ -2062,7 +2063,7 @@ img.aword-img1 {
   display: flex;
   align-items: center;
   padding: 0 25px;
-  margin-bottom: 30px;
+  margin-bottom: 56px;
 }
 
 .aword-part-taxt .btn-3a.bg-green-btn {
