@@ -1296,7 +1296,7 @@ a:hover {
   width: 100%;
   float: left;
   position: relative;
-  padding: 60px 0;
+  padding: 60px 0 0px;
 }
 
 .pos {
@@ -2430,11 +2430,90 @@ div.tips-carousel .tip ul li:before {
   height: 19.6px;
   top: 5px;
 }
-div.tips-controls {
+.sec6 .tick ul {
+  list-style-type: none;
+  padding-right: 10px;
+  margin: 0;
+}
+.sec6 .tick ul li {
+  font-size: 19px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0a0a0a;
+  position: relative;
+  padding-bottom: 24px;
+}
+.sec6 .tick ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  background-image: url(../images/Checkmark_green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 19.6px;
+  top: 5px;
+}
+
+.accordion-toggle::before {
+  content: 'Expand';
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  #009c33;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none;
+}
+
+.accordion-toggle:hover::before {
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+}
+
+div.tick {
+  padding: 10px;
+}
+
+div.nav-controls {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5px;
+}
+
+div.side-text-controls {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+  z-index: 100;
+}
+
+div.tips-controls,
+div.nav-controls,
+div.side-text-controls {
   width: 100%;
 }
 div.tips-controls #left,
-div.tips-controls #right {
+div.nav-controls #left,
+div.side-text-controls #left,
+div.side-text-controls #right,
+div.tips-controls #right,
+div.nav-controls #right {
   font-size: 40px;
   color: #009c33;
 }
@@ -2466,7 +2545,123 @@ div.tips-carousel .tip {
 #tip4 {
   margin-left: auto;
 }
+.sec6 {
+  float: left;
+  width: 100%;
+}
+.sec6 .tp {
+  font-size: 17px;
+  line-height: 1.76;
+  font-stretch: condensed;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding: 59px 0 0 0;
+}
 
+.sec6 .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.38;
+  color: #009c33;
+  font-stretch: condensed;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.sec6 p {
+  font-size: 17px;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.84;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.sec6 li {
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+div.side-part-text {
+  width: 100%;
+  padding: 59px 0 0 0;
+  position: relative;
+}
+
+div.side-part-text ul {
+  list-style-type: none;
+  padding-right: 10px;
+  margin: 0;
+}
+div.side-part-text #side-text ul {
+  width: 70%;
+  min-width: 250px;
+  margin: 0 auto;
+}
+div.side-part-text ul li {
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  position: relative;
+  padding-bottom: 24px;
+}
+div.side-part-text ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  background-image: url(../images/Checkmark_green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 19.6px;
+  top: 5px;
+}
+
+div.side-part-text-lg {
+  display: none;
+}
+
+div.side-part-text-sm {
+  display: block;
+}
+
+div.sec-7-img {
+  width: 125vw;
+}
+
+div.sec-7-img img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 400px) {
+  div.side-part-text #side-text ul {
+    min-width: 290px;
+  }
+  div.side-text-controls {
+    padding: 10px 5px;
+  }
+}
 @media only screen and (min-width: 400px) and (max-width: 576px) {
   div.tips-controls {
     top: 700px;
@@ -2485,6 +2680,9 @@ div.tips-carousel .tip {
   #tip2,
   #tip4 {
     margin-left: auto;
+  }
+  div.nav-controls {
+    padding: 15px 5px;
   }
 }
 
@@ -2512,6 +2710,10 @@ div.tips-carousel .tip {
   #tip2,
   #tip4 {
     margin-left: 15px;
+  }
+
+  div.nav-controls {
+    padding: 15px 35px;
   }
 
   div#tips-container {
@@ -2544,7 +2746,6 @@ div.tips-carousel .tip {
     letter-spacing: normal;
   }
 }
-
 
 .sticky {
   position: fixed !important;
@@ -2605,6 +2806,39 @@ div.tips-carousel .tip {
   #tip4 {
     margin-left: 15px;
   }
+  div.sec-7-img {
+    width: 100vw;
+  }
+  div.side-part-text ul li {
+    font-size: 19px;
+    line-height: 1.32;
+  }
+
+  div.nav-controls {
+    padding: 15px 30px;
+  }
+  .sec6 .tp {
+    font-size: 17px;
+    line-height: 1.47;
+    padding: 89px 0 0 0;
+  }
+
+  .sec6 .title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .sec6 p {
+    font-size: 21px;
+    line-height: 1.9;
+  }
+
+  .sec6 li {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.32;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1100px) {
@@ -2629,11 +2863,28 @@ div.tips-carousel .tip {
   #tip4 {
     margin-left: 15px;
   }
+  div.nav-controls {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .sticky {
     width: 290px;
+  }
+  div.side-part-text {
+    width: 100%;
+    padding: 80px 0 0 50px;
+  }
+  div.side-part-text ul li {
+    padding-bottom: 42px;
+  }
+  div.side-part-text-lg {
+    display: block;
+  }
+
+  div.side-part-text-sm {
+    display: none;
   }
 }
 
@@ -2660,7 +2911,7 @@ div.tips-carousel .tip {
   }
   .sticky {
     width: 350px;
-}
+  }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1680px) {
