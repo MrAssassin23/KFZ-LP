@@ -1020,7 +1020,8 @@ h3.protaction-title {
   list-style-type: none;
 }
 .aword-third-img {
-  width: 70%;
+  width: 122px;
+  height: 88px;
 }
 .awords-img {
   margin-top: 20px;
@@ -2460,7 +2461,7 @@ div.tips-carousel .tip ul li:before {
   top: 5px;
 }
 
-.accordion-toggle::before {
+.accordion-heading .accordion-toggle::before {
   content: 'Expand';
   position: absolute;
   top: 145%;
@@ -2474,7 +2475,7 @@ div.tips-carousel .tip ul li:before {
   display: none;
 }
 
-.accordion-toggle:hover::before {
+.accordion-heading .accordion-toggle:hover::before {
   display: block;
 }
 

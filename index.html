@@ -197,7 +197,7 @@
             <div class="d-flex">
               <div id="svg-animation3" class="top-forth-part-image w-50">
 
-                <object data-ng-if="startAnimation2" type="image/svg+xml"
+                <object data-ng-if="startAnimation2" type="image/svg+xml" id="forth-animation"
                   data="images/animation/Abkommen_Fahrbahn.svg"></object>
               </div>
               <div class="forth-part-text w-50">
@@ -543,7 +543,7 @@
           <div class="accordion" id="accordion1">
             <div class="accordion-heading">
               <span class="none-sm flex">
-                <a class="accordion-toggle collapsed center-a" data-toggle="collapse" data-parent="#accordion1" 
+                <a class="accordion-toggle collapsed center-a" data-toggle="collapse" data-parent="#accordion1"
                   href="#collapseOne">Tarifdetails ausklappen</a>
               </span>
               <span class="none-lg flex">
@@ -1052,7 +1052,32 @@
                   <a href="https://www.hdi.de/apps/versicherungsrechner/pkw/hdi/?mkv_produktkey=2"
                     class="btn btn-3 btn-3a icon-cart bg-green-btn">Jetzt wechseln</a>
                 </div> -->
-
+                <div class="side-part-text side-part-text-sm">
+                  <div class="side-text-controls">
+                    <a id="side-prev"><i class="fa fa-angle-left" id="left" aria-hidden="true"></i></a>
+                    <a id="side-next"> <i class="fa fa-angle-right" id="right" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="owl-carousel owl-theme" id="side-text">
+                    <ul>
+                      <li>
+                        <span class="taxt-bold">Verlässlich </span> <br>
+                        Jahrelange Erfahrung als Motorrad-Versicherer
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span class="taxt-bold">Persönliche Beratung </span> <br>
+                        Bequem von zu Hause oder direkt vor Ort
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span class="taxt-bold">Online-Vertragsverwaltung </span> <br>
+                        Rund um die Uhr Vertragsdaten einsehen, verwalten oder ändern
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="awords-img">
                   <ul>
                     <li><img src="images/images/Franke_Bornberg_Siegel.png" alt="" class="aword-third-img"></li>
@@ -1078,32 +1103,7 @@
                 </ul>
               </div>
             </div>
-            <div class="side-part-text side-part-text-sm">
-              <div class="side-text-controls">
-                <a id="side-prev"><i class="fa fa-angle-left" id="left" aria-hidden="true"></i></a>
-                <a id="side-next"> <i class="fa fa-angle-right" id="right" aria-hidden="true"></i></a>
-              </div>
-              <div class="owl-carousel owl-theme" id="side-text">
-                <ul>
-                  <li>
-                    <span class="taxt-bold">Verlässlich </span> <br>
-                    Jahrelange Erfahrung als Motorrad-Versicherer
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <span class="taxt-bold">Persönliche Beratung </span> <br>
-                    Bequem von zu Hause oder direkt vor Ort
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <span class="taxt-bold">Online-Vertragsverwaltung </span> <br>
-                    Rund um die Uhr Vertragsdaten einsehen, verwalten oder ändern
-                  </li>
-                </ul>
-              </div>
-            </div>
+
           </div>
         </div>
         <div class="sec-7-img">
@@ -1275,7 +1275,7 @@
               </div>
               <div id="collapse18" class="collapse trn-colleps" aria-labelledby="heading18" data-parent="#accordion50">
                 <div class="accordion-inner">
-                  <p >
+                  <p>
 
                     <span>Hinweise zur Preisermittlung:<br></span>
                     Berechnungsgrundlagen HDI.de Online-Rechner (Stand: 14.01.2020): HDI Motor Komfort/Premium
@@ -1573,7 +1573,7 @@
             var active_slide = $('#owl-carousel2 .owl-item.active .item').data('id');
 
             $('.show_' + active_slide).show();
-            console.log(active_slide);
+            // console.log(active_slide);
             if (active_slide == 'item1') {
               $('.show_item2').hide();
               $('.show_item3').hide();
