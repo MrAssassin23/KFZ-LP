@@ -187,8 +187,7 @@
                 </div>
               </div>
               <div id="svg-animation1" class="third-part-image w-100">
-                <object data-ng-if="startAnimation" type="image/svg+xml"
-                  data="images/animation/Wildunfall.svg"></object>
+                
               </div>
             </div>
           </div>
@@ -1447,6 +1446,16 @@
         $('.bg-wight .protaction-title').removeClass('sticky')
       }
     })
+
+    $(window).scroll(() => {
+      let position = $('#svg-animation1').offset().top - $(window).height()
+      console.log(position)
+      if ($(window).scrollTop() >= position) {
+        if (!($('#svg-animation1').children().length > 0)) {
+          $('#svg-animation1').append('<object data-ng-if="startAnimation" type="image/svg+xml" data="images/animation/Wildunfall.svg"></object>')
+        }
+      }
+    })
   </script>
   <script>
 
@@ -1538,6 +1547,7 @@
         }
       }
     });
+
   </script>
   <script>
     $(document).ready(function () {
