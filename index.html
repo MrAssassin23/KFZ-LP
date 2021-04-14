@@ -1444,9 +1444,21 @@
       }
     })
 
+    let position = $('#svg-animation2').offset().top - $(window).height()
+      console.log(position)
+      if ($(window).scrollTop() <= $(window).height() ) {
+        if (!($('#svg-animation2').children().length > 0)) {
+          $('#svg-animation2').append('<object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>')
+        }
+      }else if( $(window).scrollTop() >= $(window).height()) {
+        if (($('#svg-animation2').children().length > 0)) {
+          $('#svg-animation2').empty()
+        }
+      }       
+
     $(window).scroll(() => {
       let position = $('#svg-animation1').offset().top - $(window).height()
-      console.log(position)
+      
       if ($(window).scrollTop() >= position && ($(window).scrollTop() <= position + $(window).height()) 
         || ($(window).scrollTop() <= position + ($(window).height() * 0.5) + $(window).height()) &&  ($(window).scrollTop() >= position ) ) {
         if (!($('#svg-animation1').children().length > 0)) {
@@ -1461,7 +1473,7 @@
 
     $(window).scroll(() => {
       let position = $('#svg-animation3').offset().top - $(window).height()
-      console.log(position)
+      
       if ($(window).scrollTop() >= position && ($(window).scrollTop() <= position + $(window).height()) 
         || ($(window).scrollTop() <= position + ($(window).height() * 0.5) + $(window).height()) &&  ($(window).scrollTop() >= position ) ) {
         if (!($('#svg-animation3').children().length > 0)) {
@@ -1476,7 +1488,7 @@
 
     $(window).scroll(() => {
       let position = $('#svg-animation5').offset().top - $(window).height()
-      console.log(position)
+      
       if ($(window).scrollTop() >= position && ($(window).scrollTop() <= position + $(window).height()) 
         || ($(window).scrollTop() <= position + ($(window).height() * 0.5) + $(window).height()) &&  ($(window).scrollTop() >= position ) ) {
         if (!($('#svg-animation5').children().length > 0)) {
@@ -1491,7 +1503,7 @@
 
     $(window).scroll(() => {
       let position = $('#svg-animation2').offset().top - $(window).height()
-      console.log(position)
+      
       if ($(window).scrollTop() <= $(window).height() ) {
         if (!($('#svg-animation2').children().length > 0)) {
           $('#svg-animation2').append('<object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>')
