@@ -124,7 +124,7 @@
               </div>
               <div id="svg-animation2" class="first-image-part">
                 <!-- <img src="images/animation/Illustration_Kollision.svg" alt=""> -->
-                <object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>
+                
               </div>
             </div>
           </div>
@@ -196,8 +196,6 @@
             <div class="d-flex">
               <div id="svg-animation3" class="top-forth-part-image w-50">
 
-                <object data-ng-if="startAnimation2" type="image/svg+xml" id="forth-animation"
-                  data="images/animation/Abkommen_Fahrbahn.svg"></object>
               </div>
               <div class="forth-part-text w-50">
                 <h4>Wenn Laub zur Panne führt </h4>
@@ -240,9 +238,8 @@
                     class="btn btn-link border-btn">Jetzt Tarif berechnen</a>
                 </div>
               </div>
-              <div id="svg-animation1" class="fifth-part-image w-100">
-                <object data-ng-if="startAnimation" type="image/svg+xml"
-                  data="images/animation/Auffahrunfall.svg"></object>
+              <div id="svg-animation5" class="fifth-part-image w-100">
+                
               </div>
             </div>
           </div>
@@ -1459,7 +1456,51 @@
         if (($('#svg-animation1').children().length > 0)) {
           $('#svg-animation1').empty()
         }
-      } 
+      }       
+    })
+
+    $(window).scroll(() => {
+      let position = $('#svg-animation3').offset().top - $(window).height()
+      console.log(position)
+      if ($(window).scrollTop() >= position && ($(window).scrollTop() <= position + $(window).height()) 
+        || ($(window).scrollTop() <= position + ($(window).height() * 0.5) + $(window).height()) &&  ($(window).scrollTop() >= position ) ) {
+        if (!($('#svg-animation3').children().length > 0)) {
+          $('#svg-animation3').append('<object data-ng-if="startAnimation2" type="image/svg+xml" id="forth-animation" data="images/animation/Abkommen_Fahrbahn.svg"></object>')
+        }
+      }else if( $(window).scrollTop() <= position || $(window).scrollTop() >= position + ($(window).height() * 1.5)) {
+        if (($('#svg-animation3').children().length > 0)) {
+          $('#svg-animation3').empty()
+        }
+      }       
+    })
+
+    $(window).scroll(() => {
+      let position = $('#svg-animation5').offset().top - $(window).height()
+      console.log(position)
+      if ($(window).scrollTop() >= position && ($(window).scrollTop() <= position + $(window).height()) 
+        || ($(window).scrollTop() <= position + ($(window).height() * 0.5) + $(window).height()) &&  ($(window).scrollTop() >= position ) ) {
+        if (!($('#svg-animation5').children().length > 0)) {
+          $('#svg-animation5').append('<object data-ng-if="startAnimation" type="image/svg+xml" data="images/animation/Auffahrunfall.svg"></object>')
+        }
+      }else if( $(window).scrollTop() <= position || $(window).scrollTop() >= position + ($(window).height() * 1.5)) {
+        if (($('#svg-animation5').children().length > 0)) {
+          $('#svg-animation5').empty()
+        }
+      }       
+    })
+
+    $(window).scroll(() => {
+      let position = $('#svg-animation2').offset().top - $(window).height()
+      console.log(position)
+      if ($(window).scrollTop() <= $(window).height() ) {
+        if (!($('#svg-animation2').children().length > 0)) {
+          $('#svg-animation2').append('<object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>')
+        }
+      }else if( $(window).scrollTop() >= $(window).height()) {
+        if (($('#svg-animation2').children().length > 0)) {
+          $('#svg-animation2').empty()
+        }
+      }       
     })
   </script>
   <script>
