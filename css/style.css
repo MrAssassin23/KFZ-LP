@@ -2410,7 +2410,7 @@ div#tips-container h4 {
 }
 
 div#tips-container p.title {
-  margin-top: 71px;
+  margin-top: 24px;
   margin-bottom: 32px;
   font-family: HDI-GerlingSans;
   font-size: 21px;
@@ -2552,7 +2552,7 @@ div.tips-controls {
 }
 
 div.tips-controls {
-  top: 710px;
+  top: 730px;
   padding: 0 10px;
   z-index: 10;
 }
@@ -2658,6 +2658,22 @@ div.side-part-text ul li:before {
   top: 5px;
 }
 
+div.tips-lg{
+  display: none !important;
+}
+
+div.tips-sm{
+  display: block !important;
+}
+
+div.tips-nav-lg{
+  display: none;
+}
+
+div.tips-nav-sm{
+  display: flex;
+}
+
 div.side-part-text-lg {
   display: none;
 }
@@ -2689,7 +2705,7 @@ html {
 }
 @media only screen and (min-width: 400px) and (max-width: 576px) {
   div.tips-controls {
-    top: 700px;
+    top: 650px;
     padding: 0 10px;
   }
   div.tips-carousel .tip {
@@ -2719,7 +2735,7 @@ html {
 
 @media only screen and (min-width: 576px) {
   div.tips-controls {
-    top: 500px;
+    top: 485px;
     padding: 0 60px;
   }
   div.tips-carousel .tip {
@@ -2760,8 +2776,8 @@ html {
   div#tips-container p.title {
     font-size: 17px;
     line-height: 1.35;
-    margin-top: 61px;
-    margin-bottom: 12px;
+    margin-top: 21px;
+    margin-bottom: 32px;
   }
 
   div.tips-carousel .tip ul li {
@@ -2802,7 +2818,7 @@ html {
   }
 
   div#tips-container p.title {
-    margin-top: 71px;
+    margin-top: 32px;
     margin-bottom: 32px;
     font-size: 21px;
     font-weight: bold;
@@ -2817,7 +2833,7 @@ html {
     display: none;
   }
   div.tips-controls {
-    top: 490px;
+    top: 455px;
     padding: 0 60px;
   }
   div.tips-carousel .tip {
@@ -2870,11 +2886,11 @@ html {
   div.tips-controls {
     padding: 0 15px !important;
   }
-}
+  }
 
 @media only screen and (min-width: 992px) {
   div.tips-controls {
-    top: 545px;
+    top: 525px;
     padding: 0 60px;
   }
   div.tips-carousel .tip {
@@ -2889,6 +2905,20 @@ html {
     margin-left: 15px;
   }
   div.nav-controls {
+    display: none ;
+  }
+  div.tips-lg{
+    display: block !important;
+  }
+  
+  div.tips-sm{
+    display: none !important;
+  }
+  div.tips-nav-lg{
+    display: flex;
+  }
+  
+  div.tips-nav-sm{
     display: none;
   }
 }
@@ -2920,7 +2950,7 @@ html {
 }
 @media only screen and (min-width: 1200px) {
   div.tips-controls {
-    top: 530px;
+    top: 500px;
     padding: 0 60px;
   }
   div.tips-carousel .tip {
@@ -2950,7 +2980,7 @@ html {
 @media only screen and (min-width: 1600px) {
   div.tips-controls {
     position: absolute;
-    top: 495px;
+    top: 470px;
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
