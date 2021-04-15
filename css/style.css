@@ -558,23 +558,40 @@ li.img-last-part {
   font-family: HDI-GerlingSans;
 }
 .i-icon::before {
-  content: url("../images/Information_i.svg");
-  width: 3px;
+  content: url(../images/Information_i.svg);
+  width: 27px;
+  height: 25px;
   position: absolute;
-  left: 21px;
+  left: 10px;
+  border-radius: 50%;
+  border: 1px solid green;
+  padding: 0px 11px 25px;
+}
+.i-icon:hover {
+  cursor: pointer;
 }
 .pl-40 {
   padding-left: 50px !important;
 }
+.i-icon:hover::after {
+  display: block;
+}
 
 .i-icon::after {
-  content: "";
-  height: 25px;
-  width: 25px;
+  content: attr(data-text);
   position: absolute;
   left: 10px;
-  border-radius: 50%;
-  border: 1px solid #009c32;
+  border-radius: 7px;
+  display: none;
+  width: 90%;
+  bottom: 110%;
+  background: white;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.32;
+  letter-spacing: normal;
+  box-shadow: 1px 1px 15px #229c3293;
 }
 .protaction-part-title p {
   font-family: HDI-GerlingSans-light;
@@ -2461,24 +2478,6 @@ div.tips-carousel .tip ul li:before {
   top: 5px;
 }
 
-.accordion-heading .accordion-toggle::before {
-  content: 'Expand';
-  position: absolute;
-  top: 145%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color:  #009c33;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 16px;
-  display: none;
-}
-
-.accordion-heading .accordion-toggle:hover::before {
-  display: block;
-}
-
 .wrapper {
   position: relative;
 }
@@ -2651,7 +2650,7 @@ div.sec-7-img img {
   margin-bottom: -4px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
