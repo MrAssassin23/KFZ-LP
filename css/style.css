@@ -557,7 +557,15 @@ li.img-last-part {
   color: #009c33;
   font-family: HDI-GerlingSans;
 }
-.i-icon::before {
+img.info-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid green;
+  padding: 0px 11px 0px;
+  margin-right: 15px;
+}
+/* .i-icon::before {
   content: url(../images/Information_i.svg);
   width: 27px;
   height: 25px;
@@ -566,24 +574,43 @@ li.img-last-part {
   border-radius: 50%;
   border: 1px solid green;
   padding: 0px 11px 25px;
-}
-.i-icon:hover {
+} */
+img.info-icon:hover {
   cursor: pointer;
 }
 .pl-40 {
   padding-left: 50px !important;
 }
-.i-icon:hover::after {
+
+.info-icon-container::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: white;
+  position: absolute;
+  box-shadow: 8px 8px 14px #229c328a;
+  transform: rotate(45deg);
+  bottom: 94%;
+  z-index: 11;
+  left: 20px;
+  display: none;
+}
+
+.info-icon-container:hover::before {
+  display: block;
+}
+.info-icon-container:hover::after {
   display: block;
 }
 
-.i-icon::after {
+.info-icon-container::after {
   content: attr(data-text);
   position: absolute;
-  left: 10px;
+  left: 7px;
   border-radius: 7px;
   display: none;
   width: 90%;
+  max-width: 400px;
   bottom: 110%;
   background: white;
   padding: 10px;
@@ -591,7 +618,7 @@ li.img-last-part {
   font-weight: 300;
   line-height: 1.32;
   letter-spacing: normal;
-  box-shadow: 1px 1px 15px #229c3293;
+  box-shadow: 1px 1px 15px #229c328a;
 }
 .protaction-part-title p {
   font-family: HDI-GerlingSans-light;
@@ -1096,7 +1123,7 @@ section.faq-section {
   width: 100%;
   float: left;
   text-align: left;
-  padding: 0;
+  padding-left: 15px;
   font-size: 19px;
   font-weight: 300;
   font-stretch: condensed;
@@ -2302,9 +2329,7 @@ span.main-title {
   width: 100%;
   max-width: 350px;
 }
-.ratecard-box img {
-  padding: 0 5px;
-}
+
 .p-lr-5 {
   padding: 0 5px;
 }
