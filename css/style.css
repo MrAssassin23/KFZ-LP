@@ -2343,6 +2343,7 @@ span.main-title {
 .top-second-part-wrapper {
   max-width: 554px;
   margin: 0 auto;
+  text-align: center;
 }
 
 div.sec1-features-container {
@@ -2526,6 +2527,7 @@ div.side-text-controls {
   justify-content: space-between;
   padding: 20px 5px;
   z-index: 100;
+  height: 0;
 }
 
 div.tips-controls,
@@ -2658,19 +2660,20 @@ div.side-part-text ul li:before {
   top: 5px;
 }
 
-div.tips-lg{
+div.tips-lg {
   display: none !important;
 }
 
-div.tips-sm{
+div.tips-sm {
   display: block !important;
 }
 
-div.tips-nav-lg{
+div.tips-nav-lg {
   display: none;
+  z-index: 100;
 }
 
-div.tips-nav-sm{
+div.tips-nav-sm {
   display: flex;
 }
 
@@ -2801,6 +2804,15 @@ html {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .slider_chang_content .accordian-slider {
+    margin-top: 0;
+  }
+  .color-white {
+    color: white !important;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   div#tips-container {
     margin-top: 24px;
@@ -2886,7 +2898,17 @@ html {
   div.tips-controls {
     padding: 0 15px !important;
   }
+}
+@media only screen and (max-width: 991px) {
+  .sec6 .tick ul {
+    list-style-type: none;
+    padding-right: 10px;
+    margin: 0;
+    min-width: 270px;
+    width: 70%;
+    margin: 0 auto;
   }
+}
 
 @media only screen and (min-width: 992px) {
   div.tips-controls {
@@ -2905,20 +2927,20 @@ html {
     margin-left: 15px;
   }
   div.nav-controls {
-    display: none ;
+    display: none;
   }
-  div.tips-lg{
+  div.tips-lg {
     display: block !important;
   }
-  
-  div.tips-sm{
+
+  div.tips-sm {
     display: none !important;
   }
-  div.tips-nav-lg{
+  div.tips-nav-lg {
     display: flex;
   }
-  
-  div.tips-nav-sm{
+
+  div.tips-nav-sm {
     display: none;
   }
 }
