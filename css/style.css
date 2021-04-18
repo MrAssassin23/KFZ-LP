@@ -2366,7 +2366,6 @@ div.sec1-features-container .feature {
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  max-width: 33.33%;
 }
 
 div.sec1-features-container .feature img {
@@ -2527,7 +2526,7 @@ div.nav-controls {
   left: 0px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 5px;
+  padding: 40px 5px;
 }
 
 div.side-text-controls {
@@ -2545,12 +2544,12 @@ div.nav-controls,
 div.side-text-controls {
   width: 100%;
 }
-div.tips-controls #left,
-div.nav-controls #left,
-div.side-text-controls #left,
-div.side-text-controls #right,
-div.tips-controls #right,
-div.nav-controls #right {
+div.tips-controls .left,
+div.nav-controls .left,
+div.side-text-controls .left,
+div.side-text-controls .right,
+div.tips-controls .right,
+div.nav-controls .right {
   font-size: 40px;
   color: #009c33;
 }
@@ -2697,7 +2696,7 @@ div.side-part-text-sm {
 
 div.sec-7-img {
   width: 125vw;
-  margin-top: -140px;
+  /* margin-top: -140px; */
 }
 
 div.sec-7-img img {
@@ -2711,7 +2710,7 @@ html {
 
 @media only screen and (min-width: 400px) {
   div.side-part-text #side-text ul {
-    min-width: 290px;
+    min-width: 250px;
   }
   div.side-text-controls {
     padding: 10px 5px;
@@ -2737,7 +2736,7 @@ html {
     margin-left: auto;
   }
   div.nav-controls {
-    padding: 15px 5px;
+    padding: 35px 5px;
   }
 }
 
@@ -2768,7 +2767,7 @@ html {
   }
 
   div.nav-controls {
-    padding: 15px 35px;
+    padding: 35px 35px;
   }
 
   div#tips-container {
@@ -2815,12 +2814,31 @@ html {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  #svg-animation2 {
+    height: 470px;
+  }
+  #svg-animation1,
+  #svg-animation3,
+  #svg-animation5 {
+    height: 470px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .slider_chang_content .accordian-slider {
     margin-top: 0;
   }
   .color-white {
     color: white !important;
+  }
+  #svg-animation2 {
+    height: 320px;
+  }
+  #svg-animation1,
+  #svg-animation3,
+  #svg-animation5 {
+    height: 276px;
   }
 }
 
@@ -2846,6 +2864,16 @@ html {
     font-size: 21px;
     font-weight: bold;
     line-height: 1.57;
+  }
+
+  .arrow-position-left {
+    position: relative;
+    left: -3px;
+  }
+
+  .arrow-position-right {
+    position: relative;
+    left: 3px;
   }
 
   div.tips-carousel .tip ul li {
@@ -2974,6 +3002,9 @@ html {
   div.side-part-text-sm {
     display: none;
   }
+  div.sec1-features-container .feature {
+    max-width: 33.33%;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -3037,4 +3068,6 @@ html {
   .sticky {
     width: 470px;
   }
+}
+@media only screen and (max-width: 768px) {
 }
