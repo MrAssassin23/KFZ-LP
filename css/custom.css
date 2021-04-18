@@ -43,6 +43,7 @@
   .none-sm-1025 {
     display: block;
   }
+
   .none-lg-1024 {
     display: none;
   }
@@ -280,7 +281,7 @@
   }
   .fifth-part-text {
     top: 2500px;
-    left: 30px;
+    left: 120px;
     width: 454px !important;
   }
   .third-part-image {
@@ -330,7 +331,6 @@
   /* new */
 }
 @media only screen and (min-width: 1600px) {
-  
   .top-forth-part-image object {
     width: 650px !important;
   }
@@ -423,7 +423,7 @@
     width: 454px !important;
   }
   .fifth-part-text {
-    left: 140px;
+    left: 150px;
     top: 3020px;
     width: 454px !important;
   }
@@ -513,7 +513,7 @@
   }
   .fifth-part-text {
     top: 2070px;
-    left: -20px;
+    left: 80px;
     width: 418px !important;
   }
   .third-part-image {
@@ -615,6 +615,12 @@
   }
 }
 @media only screen and (max-width: 1024px) {
+  .no-display-small {
+    display: none !important;
+  }
+  .no-display-big {
+    display: block !important;
+  }
   div.sec1-features-container .feature {
     width: 564px;
     margin: 0 auto;
@@ -1983,7 +1989,7 @@
   }
   .aword-third-img {
     width: 132px;
-  height: 95px;
+    height: 95px;
   }
   .aword-part-taxt p.contant-p {
     max-height: 100%;

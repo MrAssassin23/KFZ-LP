@@ -11,6 +11,15 @@
   src: url("../fonts/TTF/HDI-GerlingSansCond-Light.ttf");
 }
 
+.no-display-big {
+  display: none !important;
+}
+text-uppercase {
+  text-transform: uppercase;
+}
+text-capitalize {
+  text-transform: capitalize;
+}
 body {
   font-family: HDI-GerlingSans-light;
   font-size: 19px;
@@ -72,9 +81,9 @@ main {
   content: "Unsere Produktlinien";
   position: absolute;
   top: 0;
-  left: -99%;
+  left: -107%;
   background-color: #b3e1c2;
-  width: 98.5%;
+  width: 106.5%;
   text-align: left;
   padding: 20px 0 19px 19px;
   z-index: 0;
@@ -493,8 +502,8 @@ li.img-last-part {
 
 .switching-part-section .number-part {
   padding: 0 5px 0 10px;
-  font-size: 50px;
-  font-weight: normal;
+  font-size: 45px;
+  font-weight: bold;
   font-stretch: condensed;
   font-style: normal;
   line-height: 0.44;
@@ -923,7 +932,7 @@ h3.protaction-title {
   box-shadow: 2px 2px 5px #ff9632;
 }
 .color-orange h3.protaction-title {
-  background: #ef8a29;
+  background: #ff9632;
   position: relative;
   z-index: 99999;
 }
@@ -2357,6 +2366,7 @@ div.sec1-features-container .feature {
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
+  max-width: 33.33%;
 }
 
 div.sec1-features-container .feature img {
@@ -2439,7 +2449,7 @@ div.tips-carousel .tip {
   background-color: white;
   padding: 34px 24px 8px;
   border-radius: 5px;
-  box-shadow: 1px 1px 15px #229c3293;
+  box-shadow: 2px 4px 11px 0 rgba(0, 156, 51, 0.25);
   margin: 15px;
   flex: 0.5;
   align-self: stretch;
@@ -2687,6 +2697,7 @@ div.side-part-text-sm {
 
 div.sec-7-img {
   width: 125vw;
+  margin-top: -140px;
 }
 
 div.sec-7-img img {
