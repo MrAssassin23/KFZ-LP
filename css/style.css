@@ -931,6 +931,14 @@ h3.protaction-title {
   color: #fff;
   box-shadow: 2px 2px 5px #ff9632;
 }
+.border-btn-orange:focus {
+  box-shadow: none;
+}
+.btn-center {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
 .color-orange h3.protaction-title {
   background: #ff9632;
   position: relative;
@@ -2814,7 +2822,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #svg-animation2 {
     height: 470px;
   }
