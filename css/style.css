@@ -80,6 +80,7 @@ main {
 .table-heading-title::before {
   content: "Unsere Produktlinien";
   position: absolute;
+  text-transform: capitalize;
   top: 0;
   left: -107%;
   background-color: #b3e1c2;
@@ -205,18 +206,37 @@ ul.hegiht-protection li:last-child {
   z-index: 9999999;
   -webkit-transition: all 0.1s ease;
   transition: all 0.4s ease;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .top-navbar .fixed-top.shrink {
   padding: 5px 65px 10px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.1s ease;
-  box-shadow: -1px -2px 6px 2px #454545;
+  /* box-shadow: -1px -2px 6px 2px #454545; */
 }
+
+#svg-animation2::before {
+  height: 600px;
+}
+#svg-animation2::before {
+  height: 496px;
+}
+#svg-animation2::before {
+  content: "";
+  height: 424px;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(90deg, white 0% 20%, transparent);
+}
+
 
 .top-second-part h3 {
   font-size: 30px;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 45px;
   color: #009c33;
   text-transform: uppercase;
   font-family: HDI-GerlingSans;
@@ -236,6 +256,8 @@ ul.hegiht-protection li:last-child {
 }
 .top-second-part p.spacer {
   padding-bottom: 32px;
+  font-size: 21px;
+  line-height: 40px;
 }
 .top-second-part {
   /* max-width: 554px; */
@@ -512,14 +534,14 @@ li.img-last-part {
 }
 
 .switching-part-section .text-part {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 23px;
+  /* font-weight: bold; */
   font-stretch: condensed;
   font-style: normal;
-  line-height: 1.38;
+  line-height: 1.2;
   letter-spacing: normal;
   color: #009c33;
-  font-family: HDI-GerlingSans;
+  /* font-family: HDI-GerlingSans; */
   text-align: left;
 }
 .footer-text li.bold-taxt {
@@ -654,7 +676,7 @@ img.info-icon:hover {
   background: #ffffff;
   border-radius: 0px 0 10px 10px;
   border: 2px solid #28994b;
-  border-top: 0;
+  border-top: 1px;
 }
 
 .protaction-contant-part ul {
@@ -830,8 +852,8 @@ button.btn.btn-3.btn-3a.icon-cart.bg-green-btn.m-b-36 {
 .m-l-r-11 {
   margin: 0 11px;
 }
-.m-l-r-26 {
-  margin: 0 26px;
+.m-l-r-20 {
+  margin: 0 19px;
 }
 
 h3.protaction-title {
@@ -873,7 +895,7 @@ h3.protaction-title {
 }
 
 .protaction-table-section h5 span {
-  font-size: 35px;
+  font-size: 45px;
   color: #009c33;
   margin: 0;
   padding: 0;
@@ -1155,8 +1177,8 @@ section.faq-section {
 }
 
 .accordian-table .col-12.col-md-4 .col-md-12 {
-  padding-right: 6px;
-  padding-left: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .accordian-table h4 {
@@ -1827,8 +1849,8 @@ ul.footer-icon img {
 }
 .accordian-part .col-12,
 .accordian-part .col-md-12 {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 .m-t-10 {
   margin-top: 10px;
@@ -2990,11 +3012,17 @@ html {
   div.tips-nav-sm {
     display: none;
   }
+  .accordian-part .item-l {
+    padding-left: 10px;
+  }
+  .accordian-part .item-r {
+    padding-right: 7px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .sticky {
-    width: 290px;
+    width: 293px;
   }
   div.side-part-text {
     width: 100%;
@@ -3013,6 +3041,16 @@ html {
   div.sec1-features-container .feature {
     max-width: 33.33%;
   }
+
+  #svg-animation2::before {
+    content: "";
+    height: 424px;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(90deg, white 0% 20%, transparent);
+  }
+  
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -3037,7 +3075,17 @@ html {
     margin-left: 12px;
   }
   .sticky {
-    width: 350px;
+    width: 353px;
+  }
+
+  #svg-animation2::before {
+    height: 496px;
+  }
+  .accordian-part .item-l {
+    padding-left: 5px;
+  }
+  .accordian-part .item-r {
+    padding-right: 7px;
   }
 }
 
@@ -3074,7 +3122,16 @@ html {
     margin-left: 16px;
   }
   .sticky {
-    width: 470px;
+    width: 473px;
+  }
+  #svg-animation2::before {
+    height: 600px;
+  }
+  .accordian-part .item-l {
+    padding-left: 0px;
+  }
+  .accordian-part .item-r {
+    padding-right: 5px;
   }
 }
 @media only screen and (max-width: 768px) {

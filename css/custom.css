@@ -332,10 +332,10 @@
 }
 @media only screen and (min-width: 1600px) {
   .top-forth-part-image object {
-    width: 650px !important;
+    width: 720px !important;
   }
   .top-forth-part-image {
-    top: 2280px !important;
+    top: 2200px !important;
   }
   .protaction-contant-part {
     padding: 0 10px;
@@ -412,9 +412,9 @@
   .third-part-image {
     padding-top: 0;
     position: absolute;
-    top: 1585px;
+    top: 1500px;
     padding-right: 0;
-    width: 650px !important;
+    width: 720px !important;
     right: 0;
   }
   .third-part-text {
@@ -430,9 +430,9 @@
   .fifth-part-image {
     padding-top: 0;
     position: absolute;
-    top: 3155px;
+    top: 3085px;
     padding-right: 0;
-    width: 650px !important;
+    width: 750px !important;
     right: 0;
   }
   .forth-part-text {
@@ -450,7 +450,7 @@
     top: 2110px;
     padding-right: 0;
     width: 650px !important;
-    left: 85px;
+    left: 55px;
   }
   .first-image-part {
     top: 30px;

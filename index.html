@@ -124,7 +124,7 @@
               </div>
               <div id="svg-animation2" class="first-image-part">
                 <!-- <img src="images/animation/Illustration_Kollision.svg" alt=""> -->
-
+                <object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>
               </div>
             </div>
           </div>
@@ -386,7 +386,7 @@
           <div class="none-sm-1025 w-100 float-left mt-82">
             <div class="protaction-table-main">
               <div class="protaction-table-section"></div>
-              <div class="protaction-table-section m-l-r-26 color-orange">
+              <div class="protaction-table-section m-l-r-20 color-orange">
                 <div class="text-center">
                   <div class="d-flex align-items-end image-part-height">
                     <div class="image-part">
@@ -395,6 +395,10 @@
                   </div>
                   <div class="bg-wight">
                     <h3 class="protaction-title f-23 table-heading-title text-uppercase">
+                      Motor Premium
+                      <span style="display:block;" class="mb-0 f-19 text-capitalize">Umfassender Premium-Schutz</span>
+                    </h3>
+                    <h3 class="protaction-title f-23 table-heading-title text-uppercase sticky" id="title1-lg">
                       Motor Premium
                       <span style="display:block;" class="mb-0 f-19 text-capitalize">Umfassender Premium-Schutz</span>
                     </h3>
@@ -435,6 +439,10 @@
                   </div>
                   <div class="bg-wight">
                     <h3 class="protaction-title f-23 text-uppercase">
+                      Motor Komfort
+                      <span style="display:block" class="mb-0 f-19 text-capitalize">Umfangreiche Absicherung</span>
+                    </h3>
+                    <h3 class="protaction-title f-23 text-uppercase sticky" id="title2-lg">
                       Motor Komfort
                       <span style="display:block" class="mb-0 f-19 text-capitalize">Umfangreiche Absicherung</span>
                     </h3>
@@ -587,13 +595,14 @@
             <div id="collapseOne" class="accordion-body collapse">
               <div class="accordion-inner accordian-table">
                 <div class="row icon-color">
-                  <div class="col-12 col-md-12">
+                  <div class="col-12 col-md-12 item-l item-r">
                     <div class="accordian-main-title">
                       <h3>KFZ-Haftpflichtversicherung</h3>
                     </div>
                     <div class="title-ratecard"></div>
                   </div>
-                  <div class="col-12 col-md-4 show_item1">
+
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text='Maximalbetrag, der im Schadenfall für Sach-, Vermögens- und Personenschäden gezahlt wird.'>
@@ -602,14 +611,16 @@
                       100 Mio. Euro pauschale Versicherungssumme
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" /></span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" /></span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Maximalbetrag, der je geschädigte Person, innerhalb der Pauschaldeckung von 100. Mio. Euro, gezahlt wird.">
@@ -618,18 +629,20 @@
                       Ver­sich­erungs­summe je geschädigter Person
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <span class="p-lr-5">15 Mio. €</span>
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       <span class="p-lr-5">15 Mio. €</span>
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box  i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Versichert Fahrten mit Mietwagen im europäischen Ausland und hebt die Leistungen der Kraftfahrzeug-Haftpflichtversicherung auf deutsches Niveau an (Leistungen sind im Ausland oft niedriger)">
@@ -638,17 +651,20 @@
                       Mallorca-Police
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       vertragliche Ver­sich­erungs­summe
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       vertragliche Ver­sich­erungs­summe
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item1">
+
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box  i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Versicherungsschutz besteht für Sachschäden, die vom Versicherungsnehmer oder mitversicherten Personen an auf den Versicherungsnehmer zugelassenen Fahrzeugen (auch auf Ihrem eigenen Grundstück) verursacht werden.">
@@ -658,23 +674,26 @@
                       eigenem Grund)
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <img src="images/x-sign.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-12">
+                  <div class="col-12 col-md-12 item-r item-l">
                     <div class="accordian-main-title mt-56">
                       <h3>Fahrzeugversicherung / Kaskoversicherung</h3>
                     </div>
                   </div>
-                  <div class="col-12 col-md-4 show_item1">
+
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box  i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Zusätzlich mitversichert sind Fahrzeugteile und Fahrzeugzubehör, welche nachträglich fest im Fahrzeug eingebaut oder nachträglich fest am Fahrzeug angebaut wurden, sowie Spezialausrüstungen.">
@@ -684,18 +703,20 @@
                       eingebauter Sonderausstattung
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <span class="p-lr-5">bis 10.000 €</span>
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       <span class="p-lr-5">bis 10.000 €</span>
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Versichert ist die unmittelbare Einwirkung von Sturm, Hagel, Blitzschlag, Schneelawinen (ohne Dachlawinen), Murgang, Erdrutsch oder Überschwemmung auf das Fahrzeug. Eingeschlossen sind Schäden, die dadurch verursacht werden, dass durch diese Naturgewalten Gegenstände auf oder gegen das Fahrzeug geworfen werden. Muren sind Abgänge von Geröll, Schlamm und Gesteinsmassen.">
@@ -705,14 +726,16 @@
                       Erdrutsch
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" /></span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" /></span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box  i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Zusätzlich zu Schneelawinen sind auch Schäden durch Dachlawinen mitversichert. Dachlawinen sind ein von Dächern naturbedingtes Abgleiten oder Abstürzen von Schnee- oder Eismassen. Hierzu zählen auch Eiszapfen und Eisplatten.">
@@ -721,14 +744,16 @@
                       Mitversicherung von Dachlawinen
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box"><img src="images/x-sign.svg" alt="" class="p-lr-5" /></span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" /></span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box  i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Abgesichert sind nicht nur Schäden mit Haarwild, sondern mit Tieren aller Art (z. B. Pferde, Schafe, Kühe, etc.).">
@@ -737,18 +762,20 @@
                       Zusammenstoß mit Haarwild / Tieren
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon  justify-start">
                       <picture class="info-icon-container"
                         data-text="Unter Glasbruch versteht man Bruchschäden an der Verglasung. Als Verglasung gelten Glas- und Kunststoffscheiben (z. B. Front-, Heck-, Dach-, Seiten- und Trennscheiben), Spiegelglas und Abdeckungen von Leuchten. Der Glasbruch umfasst auch Sonderausrüstungen, wie Heckscheibenheizung, Radioantenne in der Frontscheibe (einschließlich Montagekosten) die bei einem Reparaturschaden anfallen.">
@@ -757,16 +784,18 @@
                       Glasbruch
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Nach einem Glasbruchschaden wird auch das unter Umständen beschädigte Leuchtmittel (inkl. Xenon-, LED- und Laserlicht) ersetzt.">
@@ -776,16 +805,18 @@
                       Glasbruch
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box"><img src="images/x-sign.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Versichert sind durch Marderbiss/Tierbiss unmittelbar verursachte Schäden am Fahrzeug sowie ausgelöste Folgeschäden.">
@@ -795,6 +826,7 @@
                       Folgeschäden
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
@@ -802,7 +834,8 @@
                       <span class="p-lr-5">bis 3.000 € </span>
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" />
                       <span class="p-lr-5">/</span>
@@ -810,7 +843,7 @@
                     </span>
                   </div>
 
-                  <div class="col-12 col-md-4 show_item1">
+                  <div class="col-12 col-md-4 show_item1 item-l">
                     <span class="ratecard-box i-icon justify-start">
                       <picture class="info-icon-container"
                         data-text="Haftung für Schäden, die durch grobe Fahrlässigkeit entstanden sind. Hierzu gehören bspw. das Überfahren einer roten Ampel oder das Telefonieren ohne Freisprecheinrichtung.">
@@ -819,15 +852,18 @@
                       Verzicht auf den Einwand der groben Fahrlässigkeit
                     </span>
                   </div>
+
                   <div class="col-12 col-md-4 show_item2">
                     <span class="ratecard-box">
                       <img src="images/Checkmark_green.svg" alt="" class="p-lr-5" />
 
                     </span>
                   </div>
-                  <div class="col-12 col-md-4 show_item3">
+
+                  <div class="col-12 col-md-4 show_item3 item-r">
                     <span class="ratecard-box"><img src="images/Checkmark_green.svg" alt="" /></span>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -1660,30 +1696,26 @@
   </script>
   <script>
     $(window).scroll(() => {
-      let position = $('.bg-wight').offset().top
-      let height = position + $('.bg-wight').height()
-      // $('#accordion1').height()
+      let  position,height
+      // if (!$('.bg-wight').hasClass('sticky')){
+      // }
 
+        position = $('.bg-wight').offset().top
+        height = position + $('.bg-wight').height() + $('#accordion1').height()
+      // $('#accordion1').height()
+      console.log({position,height})
       if ($(window).scrollTop() >= position && $(window).scrollTop() <= height) {
-        $('.bg-wight').css({ ' padding-top': '72px' })
-        $('.bg-wight .protaction-title').addClass('sticky')
+        $('#title1-lg').css({'display':'block'})
+        $('#title2-lg').css({'display':'block'})
+        // $('.bg-wight').css({ ' padding-top': '72px' })
+        // $('.bg-wight .protaction-title').addClass('sticky')
       } else {
-        $('.bg-wight').css({ ' padding-top': '0' })
-        $('.bg-wight .protaction-title').removeClass('sticky')
+        $('#title1-lg').css({'display':'none'})
+        $('#title2-lg').css({'display':'none'})
+        // $('.bg-wight').css({ ' padding-top': '1px' })
+        // $('.bg-wight .protaction-title').removeClass('sticky')
       }
     })
-
-    let position = $('#svg-animation2').offset().top - $(window).height()
-    console.log(position)
-    if ($(window).scrollTop() <= $(window).height()) {
-      if (!($('#svg-animation2').children().length > 0)) {
-        $('#svg-animation2').append('<object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>')
-      }
-    } else if ($(window).scrollTop() >= $(window).height()) {
-      if (($('#svg-animation2').children().length > 0)) {
-        $('#svg-animation2').empty()
-      }
-    }
 
     $(window).scroll(() => {
       let position = $('#svg-animation1').offset().top - $(window).height()
