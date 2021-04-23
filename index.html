@@ -84,13 +84,19 @@
       </div>
     </div>
   </header>
+
   <section class="sticky-bar">
     <p>Zuverlässig abgesichert auf zwei Rädern</p>
-    <a class="btn btn-link sticky-btn" target="_blank"
+    <a class="btn btn-link sticky-btn none-sm-inline" target="_blank"
       href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Jetzt Tarif
       berechnen
     </a>
+    <a class="btn btn-link sticky-btn none-lg" target="_blank"
+      href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Tarif
+      berechnen
+    </a>
   </section>
+
   <main>
     <section class="main-width">
       <div class="">
@@ -129,14 +135,13 @@
                     berechnen
                   </a>
                   <a class="btn btn-link border-btn-orange none-lg" target="_blank"
-                  href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Tarif
-                  berechnen
-                </a>
+                    href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Tarif
+                    berechnen
+                  </a>
                 </div>
 
               </div>
               <div id="svg-animation2" class="first-image-part">
-                <!-- <img src="images/animation/Illustration_Kollision.svg" alt=""> -->
                 <object data-ng-if="startAnimation1" type="image/svg+xml" data="images/animation/Crew.svg"></object>
               </div>
             </div>
@@ -293,26 +298,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="top-fift-part w-100">
-            <div class="fift-text-part">
-              <h3> BESTER SERVICE, beste preise </h3>
-              <p>
-                Autos sind nicht nur ein Garant für Flexibilität, sondern kosten in ihrer Anschaffung meist auch viel.
-                Für Ihre KFZ Versicherung müssen Sie hingegen nicht tief ins Portemonnaie greifen: HDI bietet Ihnen
-                <span class="taxt-bold">Top-Service zu tiefergelegten Preisen.</span>
-              </p>
-              <div class="sm-center">
-                <a href="https://www.hdi.de/apps/versicherungsrechner/pkw/hdi/?mkv_produktkey=2"
-                  class="btn btn-3 btn-3a icon-cart bg-green-btn m-t-b-20">Jetzt Tarif berechnen</a>
-              </div>
-            </div>
-            <div id="svg-animation4" class="top-fift-image">
-               <img src="images/animation/Illustration_Garage.svg" alt=""> 
-              <object data-ng-if="startAnimation3" type="image/svg+xml"
-                data="images/animation/Illustration_Garage.svg"></object>
-            </div>
-          </div> -->
 
         </div>
       </div>
@@ -959,32 +944,6 @@
               </div>
             </div>
 
-            <!-- <div class="item">
-              <div class="slider-rate-part">
-                <div class="f1_container">
-                  <div class="f1_card">
-                    <div class="front face">
-                      <img src="images/images/" alt="" />
-                    </div>
-                    <div class="back face center">
-                      <p>
-                        Bei einem von Ihnen als Fahrer verursachten Unfall
-                        erhalten nur Ihre Mitfahrer bei Personenschäden eine
-                        Leistung aus Ihrer
-                        Kraftfahrzeug-Haftpflichtversicherung. Mit unserem
-                        Fahrer-Schutz sind auch Sie als Fahrer abgesichert.
-                        Der Versicherungsschutz besteht für jeden berechtigten
-                        Fahrer, der das 23. Lebensjahr vollendet hat und die
-                        Versicherungssumme beträgt 8 Mio. Euro.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="color-green">MOBILITÄTS-SCHUTZ</h4>
-                <p class="opacity-none">ab <span>2,17 €</span> / Monat</p>
-              </div>
-            </div> -->
-
             <div class="item">
               <div class="slider-rate-part">
                 <div class="f1_container">
@@ -1091,90 +1050,6 @@
         </div>
       </div>
     </section>
-    <!-- 
-    <section class="selction-image-part">
-      <div class="container">
-        <div class="selection-title">
-          <h3>SIE MÖGEN ES SCHNELL UND KOMPAKT?</h3>
-          <p>Jetzt prüfen, welche Leistungen in welchem Baustein enthalten sind</p>
-        </div>
-        <div class="selection-dopbutn">
-          <div class="dropdown">
-            <a href="#" id="dropdownMenuButton" class="open-dropbutn" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <img src="images/Filter_Icon.svg" alt=""> {{selectedDropdown}} <img src=images/arrow_down_green.svg
-                alt="">
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a data-ng-click="selectedDropdown = 'KFZ-Haftpflicht'" class="dropdown-item"> KFZ-Haftpflicht </a>
-              <a data-ng-click="selectedDropdown = 'Teilkasko + KFZ-Haftpflicht'" class="dropdown-item">Teilkasko +
-                KFZ-Haftpflicht</a>
-              <a data-ng-click="selectedDropdown = 'Vollkasko + KFZ-Haftpflicht'" class="dropdown-item">Vollkasko +
-                KFZ-Haftpflicht</a>
-            </div>
-          </div>
-          <div class="selection-dopimages">
-            <ul>
-              <li
-                data-ng-class="{'active' : (selectedId == item.id - 1),
-              'disabled': (selectedDropdown == 'KFZ-Haftpflicht' && $index > 0) || (selectedDropdown == 'Teilkasko + KFZ-Haftpflicht' && $index > 7) || (selectedDropdown == 'Vollkasko + KFZ-Haftpflicht' && $index < 0) }"
-                data-ng-repeat="item in allImages">
-                <img data-ng-click="select(item)" src="images" data-ng-attr-src="{{item.src}}"
-                  data-ng-attr-alt="{{item.src}}" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="selection-dopimages mobile" data-ng-if="selectedDropdown == 'KFZ-Haftpflicht'">
-            <div style="width: 100%;float: left;" class="accordian-slider arrow-class">
-              <div class="owl-item active owl-theme" id="owl-carou">
-                <div class="item selection-image-bottom">
-                  <img src="images/slection/Unfallschaden_am_fremden_Fahrzeug.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="selection-dopimages mobile" data-ng-if="selectedDropdown != 'KFZ-Haftpflicht'">
-            <div style="width: 100%;float: left;" class="accordian-slider arrow-class1">
-              <div class="owl-carousel owl-theme" id="owl-carousel-img">
-                <div class="item selection-image-bottom" data-ng-repeat="item in images">
-                  <img data-ng-click="select(item)" src="images" data-ng-attr-src="{{item.src}}"
-                    data-ng-attr-alt="{{item.src}}" alt="">
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-ng-if="selectedDropdown == 'KFZ-Haftpflicht'" class="selection-image-bottom">
-            <h3>Unfallschaden am fremden Fahrzeug</h3>
-            <p>Wenn Ihr Fahrzeug in ein Schadenereignis verwickelt ist und der Geschädigte deswegen Ansprüche geltend
-              macht, dann kommt Ihre HDI Versicherung für Personen-, Sach- und Vermögensschäden auf
-            </p>
-            <div class="sm-center">
-              <a href="https://www.hdi.de/apps/versicherungsrechner/pkw/hdi/?mkv_produktkey=2"
-                class="btn btn-link border-btn">Jetzt Tarif berechnen
-              </a>
-            </div>
-          </div>
-          <div data-ng-style="{ 'display' : (selectedDropdown != 'KFZ-Haftpflicht') ? 'block' : 'none' }">
-            <div style="width: 100%;float: left;" class="accordian-slider arrow-class1">
-              <div class="owl-carousel owl-theme" id="owl-carousel4">
-                <div class="item selection-image-bottom" data-ng-repeat="item in images">
-                  <h3>{{item.header}}</h3>
-                  <p>{{item.text}}
-                  </p>
-                  <div class="sm-center">
-                    <a href="https://www.hdi.de/apps/versicherungsrechner/pkw/hdi/?mkv_produktkey=2"
-                      class="btn btn-link border-btn">Jetzt Tarif berechnen
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
 
     <section class="aword-section">
       <div class="aword-part1">
@@ -1714,18 +1589,35 @@
     })
   </script>
   <script>
+    $(document).ready(() => {
+      $('section.sticky-bar').css({ 'transform': 'translateY(0%)' })
+    })
     $(window).scroll(() => {
-      let position, height
+      let position, height, sticky_timeout
       // if (!$('.bg-wight').hasClass('sticky')){
       // }
 
       position = $('.bg-wight').offset().top
       height = position + $('.bg-wight').height() + $('#accordion1').height()
       // $('#accordion1').height()
-      console.log({ position, height })
+      // console.log({ position, height })
+      clearTimeout(sticky_timeout)
       if ($(window).scrollTop() >= position && $(window).scrollTop() <= height) {
         $('#title1-lg').css({ 'display': 'block' })
         $('#title2-lg').css({ 'display': 'block' })
+        // if ($('.navbar').hasClass('nav-up')) {
+        //   console.log('up')
+        //   $('#title1-lg').css({ 'top': '0' })
+        //   $('#title2-lg').css({ 'top': '0' })
+        // } else if ($('.navbar').hasClass('nav-down')) {
+        //   console.log('down')
+        //   $('#title1-lg').css({ 'top': '65px' })
+        //   $('#title2-lg').css({ 'top': '65px' })
+        //   sticky_timeout = setTimeout(() => {
+        //     $('#title1-lg').css({ 'top': '0' })
+        //     $('#title2-lg').css({ 'top': '0' })
+        //   }, 3100)
+        // }
         // $('.bg-wight').css({ ' padding-top': '72px' })
         // $('.bg-wight .protaction-title').addClass('sticky')
       } else {

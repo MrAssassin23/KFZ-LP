@@ -228,57 +228,43 @@ section.sticky-bar {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 72px;
+  height: 58px;
   background-color: #009c33;
   z-index: 1111111;
   display: flex;
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
   align-items: center;
   justify-content: center;
 }
 
 section.sticky-bar p {
-  font-size: 21px;
+  font-size: 17px;
   font-family: HDI-GerlingSans;
   font-weight: bold;
   font-stretch: condensed;
   font-style: normal;
   line-height: 1.19;
   letter-spacing: normal;
-  text-align: right;
   color: #ffffff;
+  text-align: center;
   margin: 0;
-  padding-right: 32px;
+  padding-right: 8px;
 }
 
 section.sticky-bar .sticky-btn {
   border: solid 1.5px #ff9632;
   color: white;
   background-color: #ff9632;
-  width: 240px;
-  padding: 7.5px 0 0 0;
-  height: 48px;
-  margin: 34px 0 33px 16px;
-  font-size: 19px;
+  width: 140px;
+  padding: 4.5px 0 0 0;
+  height: 34px;
+  margin: 0px 12px 0px 0px;
+  font-size: 17px;
   font-weight: bold;
   font-family: HDI-GerlingSans;
 }
 
-/* section.sticky-bar {
-  height: 72px;
-}
-
-section.sticky-bar p{
-  font-size: 21px;
-  line-height: 1.19;
-  padding-right: 32px;
-}
-
-section.sticky-bar .sticky-btn {
-  width: 240px;
-  padding: 7.5px 0 0 0;
-  height: 48px;
-  font-size: 19px;
-} */
 .sticky-btn:focus {
   border: none;
   outline: none;
@@ -2917,6 +2903,7 @@ html {
 .sticky {
   position: fixed !important;
   top: 0;
+  transition: all 0.3s ease-in-out;
   width: 290px;
   z-index: 99999;
 }
@@ -3065,6 +3052,22 @@ html {
   }
   .f1_container {
     height: 200px;
+  }
+  section.sticky-bar {
+    height: 72px;
+  }
+  
+  section.sticky-bar p{
+    font-size: 21px;
+    line-height: 1.19;
+    padding-right: 32px;
+  }
+  
+  section.sticky-bar .sticky-btn {
+    width: 240px;
+    padding: 7.5px 0 0 0;
+    height: 48px;
+    font-size: 19px;
   }
 }
 
