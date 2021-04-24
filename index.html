@@ -86,13 +86,9 @@
   </header>
 
   <section class="sticky-bar">
-    <p>Zuverlässig abgesichert auf zwei Rädern</p>
-    <a class="btn btn-link sticky-btn none-sm-inline" target="_blank"
+    <p class="none-sm">Zuverlässig abgesichert auf zwei Rädern</p>
+    <a class="btn btn-link sticky-btn " target="_blank"
       href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Jetzt Tarif
-      berechnen
-    </a>
-    <a class="btn btn-link sticky-btn none-lg" target="_blank"
-      href="https://www.hdi.de/apps/versicherungsrechner/kraftrad/hdi/?mkv_produktkey=2">Tarif
       berechnen
     </a>
   </section>
@@ -176,7 +172,7 @@
                 </p>
               </div>
               <div class="feature">
-                <img src="images/images/Icon_Flexibilität.svg" alt="">
+                <img src="images/images/Icon_Flexibel.svg" alt="">
                 <h4> So flexibel wie Ihr Fahrstil
                 </h4>
                 <p>
@@ -209,7 +205,7 @@
                 </p>
               </div>
               <div class="feature" id="feature3">
-                <img src="images/images/Icon_Flexibilität.svg" alt="">
+                <img src="images/images/Icon_Flexibel.svg" alt="">
                 <h4> So flexibel wie Ihr Fahrstil
                 </h4>
                 <p>
@@ -260,7 +256,7 @@
                   Steine und andere Hindernisse! Und schon kommt Peter von der Fahrbahn ab.
                   Zum Glück passiert ihm nichts.
                 </p>
-                <p class="spacer">
+                <p>
                   Um die <span class="taxt-bold"> Bergung seiner defekten Maschine </span> und seinen <span
                     class="taxt-bold"> Transport nach Hause </span> kümmert sich außerdem die Motorradversicherung von
                   HDI – noch einmal gutgegangen, Peter!
@@ -377,7 +373,7 @@
           <div class="protaction-part-title" id="unseretarife">
             <p class="title">4 von 8</p>
             <h3 class="text-transform-uppercase">
-              Die richtige ABsicherung für sie und ihr Motorrad
+              Die richtige ABsicherung für <br> sie und ihr Motorrad
             </h3>
             <p>Passen Sie Ihren HDI-Tarif individuell an Ihre Situation an</p>
           </div>
@@ -929,7 +925,7 @@
                 <div class="f1_container">
                   <div class="f1_card">
                     <div class="front face">
-                      <img src="images/images/Mobilitätsschutz_Icon.svg" alt="" />
+                      <img src="images/images/Mobil_Icon.svg" alt="" />
                     </div>
                     <div class="back face center">
                       <p>
@@ -949,7 +945,7 @@
                 <div class="f1_container">
                   <div class="f1_card">
                     <div class="front face">
-                      <img src="images/images/Mobilitätsschutz-Plus_Icon.svg" alt="" />
+                      <img src="images/images/Mobil-Plus_Icon.svg" alt="" />
                     </div>
                     <div class="back face center">
                       <p>
@@ -980,7 +976,7 @@
                     </div>
                   </div>
                 </div>
-                <h4 class=" color-green" style="text-transform: uppercase;">Verkehrs-
+                <h4 class="color-green lh-sm" style="text-transform: uppercase; ">Verkehrs- <br>
                   Rechtsschutzversicherung</h4>
                 <p class="opacity-none"> ab <span>0,89 €</span> / Monat</p>
               </div>
@@ -1006,7 +1002,7 @@
           <h3 class="title none-lg">DER OPTIMALE SCHUTZ FÜR <br> 125er & CO </h3>
           <p class='mb-0'>Einfach abschließen und genießen:
           </p>
-          <p style="line-height: .8;">Ihre Versicherung für Leichtkrafträder über 50 ccm bis 125 ccm</p>
+          <p style="line-height: 1.35;">Ihre Versicherung für Leichtkrafträder über 50 ccm bis 125 ccm</p>
         </div>
         <div class="wrapperr">
           <div class="nav-controls">
@@ -1591,6 +1587,15 @@
   <script>
     $(document).ready(() => {
       $('section.sticky-bar').css({ 'transform': 'translateY(0%)' })
+    })
+    $(window).scroll(() => {
+      let position = $('.footer-main').offset().top - $(window).height()
+
+      if ($(window).scrollTop() >= position) {
+        $('section.sticky-bar').css({ 'transform': 'translateY(100%)' })
+      } else {
+        $('section.sticky-bar').css({ 'transform': 'translateY(0%)' })
+      }
     })
     $(window).scroll(() => {
       let position, height, sticky_timeout

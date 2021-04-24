@@ -1394,7 +1394,7 @@
   }
   .first-text-part h4 {
     margin: 0 0 30px 0;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: normal;
     font-stretch: condensed;
     font-style: normal;
@@ -1460,7 +1460,7 @@
   .top-second-part h3 {
     font-size: 24px;
     font-weight: bold;
-    line-height: 1.25;
+    line-height: 1.38;
     color: #009c33;
   }
   .top-second-part p {
@@ -2032,9 +2032,7 @@
     height: 40px !important;
     width: 40px !important;
   }
-  .first-text-part h1 {
-    font-size: 22px !important;
-  }
+
   .arrow-class button.owl-next {
     position: absolute;
     right: -20px;
@@ -2042,12 +2040,7 @@
     height: 40px !important;
     width: 40px !important;
   }
-  .switching-part h3 {
-    font-size: 19px;
-  }
-  .first-text-part h1 {
-    font-size: 19px;
-  }
+
   .faq-accordion-heading a span {
     width: 260px;
     float: left;
