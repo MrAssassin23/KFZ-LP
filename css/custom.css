@@ -1700,8 +1700,8 @@
     margin: 0 auto;
   }
   .forth-part-text h4 {
-    font-size: 17px;
-    line-height: 1.35;
+    font-size: 21px;
+    line-height: 1.57;
   }
   .top-third-part {
     float: left;
@@ -1738,14 +1738,21 @@
     width: 100%;
   }
   .third-part-text h4 {
-    font-size: 17px;
-    line-height: 1.35;
+    font-size: 21px;
+    line-height: 1.57;
   }
   .third-part-text p {
     font-size: 17px;
     line-height: 1.35;
     margin-bottom: 30px;
   }
+  .fifth-part-text p{
+    font-size: 17px;
+    line-height: 1.35;
+  }
+ .fifth-part-text p.spacer{
+   padding-bottom: 12px;
+ }
   .third-part-text p.title {
     font-size: 17px;
     line-height: 1.35;

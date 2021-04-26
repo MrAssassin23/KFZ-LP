@@ -2470,6 +2470,7 @@ div.sec1-features-container .feature p {
 div#tips-container {
   margin-top: 24px;
   margin-bottom: 106px;
+  position: relative;
 }
 
 div#tips-container p {
@@ -2621,6 +2622,10 @@ div.nav-controls,
 div.side-text-controls {
   width: 100%;
 }
+div.tips-controls {
+  width: calc(100% + 30px);
+  transform: translateX(-30px);
+}
 div.tips-controls .left,
 div.nav-controls .left,
 div.side-text-controls .left,
@@ -2640,8 +2645,8 @@ div.tips-controls {
 }
 
 div.tips-controls {
-  top: 630px;
-  padding: 0 10px;
+  top: 530px;
+  padding: 0 20px;
   z-index: 10;
   height: 0;
 }
@@ -2820,8 +2825,8 @@ html {
 
 @media only screen and (min-width: 400px) and (max-width: 576px) {
   div.tips-controls {
-    top: 560px;
-    padding: 0 10px;
+    top: 460px;
+    padding: 0 30px;
   }
   div.tips-carousel .tip {
     width: 320px;
@@ -2848,16 +2853,16 @@ html {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 690px) {
+/* @media only screen and (min-width: 576px) and (max-width: 690px) {
   div.tips-controls {
     padding: 0 15px !important;
   }
-}
+} */
 
 @media only screen and (min-width: 576px) {
   div.tips-controls {
-    top: 485px;
-    padding: 0 60px;
+    top: 385px;
+    padding: 0 0px;
   }
   div.tips-carousel .tip {
     width: auto;
@@ -2920,11 +2925,11 @@ html {
   z-index: 99999;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 860px) {
+/* @media only screen and (min-width: 768px) and (max-width: 860px) {
   div.tips-controls {
     padding: 0 15px !important;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #svg-animation2 {
@@ -3030,8 +3035,8 @@ html {
     display: none;
   }
   div.tips-controls {
-    top: 455px;
-    padding: 0 60px;
+    top: 335px;
+    padding: 0 0px;
   }
   div.tips-carousel .tip {
     height: 260px;
@@ -3109,11 +3114,11 @@ html {
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1100px) {
   div.tips-controls {
     padding: 0 15px !important;
   }
-}
+} */
 
 @media only screen and (max-width: 991px) {
   .sec6 .tick ul {
@@ -3128,8 +3133,8 @@ html {
 
 @media only screen and (min-width: 992px) {
   div.tips-controls {
-    top: 525px;
-    padding: 0 60px;
+    top: 405px;
+    padding: 0 0px;
   }
   div.tips-carousel .tip {
     height: 360px;
@@ -3195,27 +3200,18 @@ html {
   div.sec1-features-container .feature {
     max-width: 33.33%;
   }
-
-  #svg-animation2::before {
-    content: "";
-    height: 392px;
-    width: 150px;
-    position: absolute;
-    z-index: 1;
-    background-image: linear-gradient(90deg, white 0% 20%, transparent);
-  }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1300px) {
   div.tips-controls {
     padding: 0 30px !important;
   }
-}
+} */
 
 @media only screen and (min-width: 1200px) {
   div.tips-controls {
-    top: 500px;
-    padding: 0 60px;
+    top: 380px;
+    padding: 0 0px;
   }
   div.tips-carousel .tip {
     height: 315px;
@@ -3232,9 +3228,6 @@ html {
     width: 354px;
   }
 
-  #svg-animation2::before {
-    height: 459px;
-  }
   .accordian-part .item-l {
     padding-left: 5px;
   }
@@ -3255,19 +3248,19 @@ html {
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1680px) {
-  div.tips-controls {
+  /* div.tips-controls {
     padding: 0 30px !important;
-  }
-  div#tips-container {
+  } */
+  /* div#tips-container {
     padding: 0 45px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1600px) {
   div.tips-controls {
     position: absolute;
-    top: 470px;
-    padding: 0 50px;
+    top: 350px;
+    padding: 0 0px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -3289,9 +3282,6 @@ html {
   }
   .sticky {
     width: 474px;
-  }
-  #svg-animation2::before {
-    height: 555px;
   }
   .accordian-part .item-l {
     padding-left: 2px;
