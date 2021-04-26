@@ -2635,6 +2635,14 @@ div.nav-controls .right {
   font-size: 40px;
   color: #009c33;
 }
+div.tips-controls .left:hover,
+div.nav-controls .left:hover,
+div.side-text-controls .left:hover,
+div.side-text-controls .right:hover,
+div.tips-controls .right:hover,
+div.nav-controls .right:hover { 
+  cursor: pointer;
+}
 div.tips-controls {
   position: absolute;
   top: 495px;
