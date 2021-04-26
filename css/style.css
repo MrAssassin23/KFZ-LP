@@ -211,7 +211,7 @@ ul.hegiht-protection li:last-child {
   padding: 5px 65px 10px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.1s ease;
-  /* box-shadow: -1px -2px 6px 2px #454545; */
+  box-shadow: -1px -2px 6px 2px #454545;
 }
 .nav-wrapper {
   width: 100%;
