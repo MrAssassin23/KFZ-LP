@@ -211,7 +211,7 @@
     width: 50%;
     position: absolute;
     right: -20px;
-    top: 120px;
+    top: 101px;
   }
 
   .first-text-part h4 {
@@ -453,7 +453,7 @@
     left: 55px;
   }
   .first-image-part {
-    top: 30px;
+    top: 2px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -476,7 +476,7 @@
     width: 53%;
     position: absolute;
     right: -20px;
-    top: 145px;
+    top: 131px;
   }
   .main-width {
     width: 960px;
